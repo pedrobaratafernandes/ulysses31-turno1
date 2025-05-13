@@ -1,0 +1,188 @@
+{
+  "_resourceType": "scene",
+  "id": "c70a935f-ed10-4843-bd47-ece80704ea8d",
+  "_index": 0,
+  "name": "Scene 1",
+  "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_1",
+  "x": 128,
+  "y": 152,
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Codigo para o jogador trocar de armas"
+      },
+      "id": "d5eaa786-b68b-4d83-985e-354e75160d68"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "3",
+              "trueText": "Gun",
+              "falseText": "Blade"
+            },
+            "id": "b171116e-4498-49e0-8543-ca70b81ab50c"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "true"
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_INPUT_SCRIPT",
+                  "args": {
+                    "input": [
+                      "a"
+                    ],
+                    "override": true,
+                    "__scriptTabs": "press"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_LAUNCH_PROJECTILE",
+                        "args": {
+                          "__section": "projectile",
+                          "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                          "spriteStateId": "",
+                          "actorId": "$self$",
+                          "x": 0,
+                          "y": 0,
+                          "directionType": "actor",
+                          "otherActorId": "$self$",
+                          "direction": "right",
+                          "angle": 0,
+                          "angleVariable": "L0",
+                          "targetActorId": "$self$",
+                          "initialOffset": 0,
+                          "speed": 2,
+                          "animSpeed": 15,
+                          "lifeTime": 4,
+                          "loopAnim": true,
+                          "destroyOnHit": true,
+                          "collisionGroup": "1",
+                          "collisionMask": [
+                            "1"
+                          ]
+                        },
+                        "id": "b85fc98a-875e-497b-8d4c-0956a34a2eeb"
+                      }
+                    ]
+                  },
+                  "id": "1a2b1e34-6e6d-416c-990c-27f602bf809a"
+                }
+              ],
+              "false": []
+            },
+            "id": "f78fc283-7dc9-4aac-90a5-073f7b3618fe"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "3"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_INPUT_SCRIPT",
+                  "args": {
+                    "input": [
+                      "a"
+                    ],
+                    "override": true,
+                    "__scriptTabs": "press"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_LAUNCH_PROJECTILE",
+                        "args": {
+                          "__section": "projectile",
+                          "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+                          "spriteStateId": "",
+                          "actorId": "$self$",
+                          "x": 0,
+                          "y": 0,
+                          "directionType": "actor",
+                          "otherActorId": "$self$",
+                          "direction": "right",
+                          "angle": 0,
+                          "angleVariable": "L0",
+                          "targetActorId": "$self$",
+                          "initialOffset": 0,
+                          "speed": 2,
+                          "animSpeed": 15,
+                          "lifeTime": 0.2,
+                          "loopAnim": true,
+                          "destroyOnHit": true,
+                          "collisionGroup": "1",
+                          "collisionMask": [
+                            "1"
+                          ]
+                        },
+                        "id": "99f2a069-5986-4b9e-a9f8-e054b6244b23"
+                      }
+                    ]
+                  },
+                  "id": "fecf4d11-bf87-4c05-9b9f-d5f8e3ffff39"
+                }
+              ],
+              "false": []
+            },
+            "id": "32275324-6e0d-4529-8dc2-16e2141f497e"
+          }
+        ]
+      },
+      "id": "65bec7e9-df77-4fef-84c2-d7f975ec231f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "68b9c1b5-f4e8-4f2d-be91-a3e75ea21f0e"
+    }
+  ],
+  "playerHit3Script": []
+}

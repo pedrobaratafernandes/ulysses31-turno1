@@ -1,0 +1,73 @@
+{
+  "_resourceType": "actor",
+  "id": "fab89939-26de-42b1-9edc-875429fad5f3",
+  "name": "gameManager",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Esperar um segundo"
+      },
+      "id": "e1c9e42e-dc35-4250-8786-ceb2998985ed"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "f1ae9dde-10a8-4548-8f8a-53dfc355085a"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Random para o ataque do Minotauro"
+      },
+      "id": "db0727fc-7aab-4c0c-88a2-64a8df9989aa"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "rnd",
+          "value": {
+            "type": "number",
+            "value": 2
+          }
+        }
+      },
+      "id": "d6d0b732-eb91-47c1-b4ac-54d130691dee"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "1e74baf0-50cd-4f9f-b687-667617dada06"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 0,
+  "y": 0,
+  "_index": 1
+}

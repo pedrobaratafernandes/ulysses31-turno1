@@ -1,4 +1,20 @@
 {
   "_resourceType": "variables",
-  "variables": []
+  "variables": [
+    {
+      "id": "c70a935f-ed10-4843-bd47-ece80704ea8d__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    },
+    {
+      "id": "3",
+      "name": "Switch",
+      "symbol": "var_switch"
+    },
+    {
+      "id": "5",
+      "name": "Random",
+      "symbol": "var_random"
+    }
+  ]
 }
