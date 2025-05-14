@@ -1,0 +1,456 @@
+{
+  "_resourceType": "actor",
+  "id": "247ac26b-c824-4e5b-897c-d4b218ebafda",
+  "name": "Game Manager",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "42899cea-4627-4ca1-82ba-c6a5754d4909",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_3",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Sistema de movimento tipo jogo punch out"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "anular movimento do jogador",
+              "__collapse": true
+            },
+            "id": "af568450-2de2-4a31-8e92-f26b3d98ee73"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "right",
+                "left",
+                "down",
+                "up"
+              ],
+              "override": true,
+              "__scriptTabs": "press",
+              "__collapse": true,
+              "__comment": false
+            },
+            "children": {
+              "true": []
+            },
+            "id": "a0b8b6ff-9cd1-4bed-a862-5bfb3c1825af"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "esquivar para a esquerda",
+              "__collapse": true
+            },
+            "id": "6368b1ef-48a7-406f-a237-5446905fb704"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "left"
+              ],
+              "override": true,
+              "__scriptTabs": "press",
+              "__collapse": true,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": -3
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "13edacc5-8a77-4592-993c-68f4cc4701eb"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 1.5,
+                    "frames": 30
+                  },
+                  "id": "90423b64-9596-44bf-a7b2-7fec3567ebb6"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "5fa7a85e-ede4-4a41-9f49-ffb8f2b67f93"
+                }
+              ]
+            },
+            "id": "3307f64e-b5af-469a-9712-a54e7feadf5e"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "esquivar para a direita",
+              "__collapse": true
+            },
+            "id": "93361b72-78ea-4184-b069-68b1f3c59873"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "right"
+              ],
+              "override": true,
+              "__scriptTabs": "press",
+              "__collapse": true,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "76ea52ee-52ca-4155-8d69-47e9b553fe70"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 1.5,
+                    "frames": 30
+                  },
+                  "id": "54de874b-78c9-481b-8c74-15121b94df11"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": -3
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "28be506e-6fe6-472c-846a-136bdf2ee5a0"
+                }
+              ]
+            },
+            "id": "4883c803-991d-48ae-b415-590cee7e8364"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "4"
+                      },
+                      "valueB": {
+                        "type": "false"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_LAUNCH_PROJECTILE",
+                        "args": {
+                          "__section": "projectile",
+                          "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+                          "spriteStateId": "",
+                          "actorId": "player",
+                          "x": 0,
+                          "y": 0,
+                          "directionType": "direction",
+                          "otherActorId": "$self$",
+                          "direction": "up",
+                          "angle": 0,
+                          "angleVariable": "L0",
+                          "targetActorId": "$self$",
+                          "initialOffset": 0,
+                          "speed": 2,
+                          "animSpeed": 15,
+                          "lifeTime": 0.4,
+                          "loopAnim": true,
+                          "destroyOnHit": true,
+                          "collisionGroup": "1",
+                          "collisionMask": [
+                            "1"
+                          ]
+                        },
+                        "id": "9f4a0943-66ed-45da-aff5-740cbbfb0ac9"
+                      },
+                      {
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "time": 1.9,
+                          "frames": 30
+                        },
+                        "id": "8c5bc090-ff4c-4795-bfd3-d78e7c0a2979"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "89c583bb-c709-4adf-bb7a-9579246c93e9"
+                }
+              ]
+            },
+            "id": "e54620c6-4821-4368-a8a3-8d14299d2d80"
+          }
+        ]
+      },
+      "id": "3d320202-551c-4296-bd82-f883a721b6f5"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "ataque aleatorio do minotauro",
+        "__collapse": true
+      },
+      "id": "a0b16abc-4213-4935-94ae-fb62d570fa69"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "rnd",
+          "value": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapse": false
+      },
+      "id": "cb8f9266-d351-499c-84ed-4fd205f93264"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "8a397df2-ad12-41a4-b1f4-f08ab17ed405"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "apenas quando o minotauro esta proximo do jogador permitir ataque de espada",
+        "__collapse": true
+      },
+      "id": "70beaa2b-8658-4da6-b284-a6647a339b8f"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "178f4f37-17d9-465f-9ecc-59af858a6db3",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "__collapseElse": false,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "4",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "c604605d-d55d-46dd-879a-4c0075b4d320"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "4",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "de06bab0-e50c-4c46-a1ef-1666abf26596"
+          }
+        ]
+      },
+      "id": "66e9863d-2654-4c54-a623-c6d259343550"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "se minotauro morre ir para a fase 2 do minotauro - punch out",
+        "__collapse": true
+      },
+      "id": "56bd3d46-ec37-4f44-9d3d-c42cb0aead86"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "987039ab-fdf3-4699-9766-dc873a2f9162",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "ca1bec5b-7136-4162-a71b-49e7425a32c7"
+          }
+        ],
+        "false": []
+      },
+      "id": "b4cd371f-5f1e-474f-8dbf-4aacfb2c71d2"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "se jogador morre ir para a fase 1 do minotauro",
+        "__collapse": true
+      },
+      "id": "2a09826a-5f24-4810-9d85-b9fc625b5ac1"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "c70a935f-ed10-4843-bd47-ece80704ea8d",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 13
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "34f48841-be40-41a7-84b2-eb20a0c81659"
+          }
+        ],
+        "false": []
+      },
+      "id": "0755b828-237d-4b43-8d1f-ba51479ab6a7"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 0,
+  "y": 0,
+  "_index": 1
+}

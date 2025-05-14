@@ -2,7 +2,7 @@
   "_resourceType": "scene",
   "id": "c70a935f-ed10-4843-bd47-ece80704ea8d",
   "_index": 0,
-  "name": "Scene 1",
+  "name": "Minotauro",
   "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
   "tilesetId": "",
   "width": 20,
@@ -19,7 +19,67 @@
     {
       "command": "EVENT_COMMENT",
       "args": {
-        "text": "Codigo para o jogador trocar de armas"
+        "text": "jogador começa com pistola ativa",
+        "__collapse": true
+      },
+      "id": "87b0fb8f-8c09-4e1e-8df8-701f02345353"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "3",
+        "value": {
+          "type": "true"
+        },
+        "__collapse": true
+      },
+      "id": "4c02363d-c08c-4010-a8f2-efb210d6bfa4"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "vida do minotauro começa com 3",
+        "__collapse": true
+      },
+      "id": "a28c5de2-12b4-44bc-99b0-48eb6f7e7687"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 3
+        },
+        "__collapse": true
+      },
+      "id": "5f656bff-e251-4185-b3ec-a5f91dc9ebb8"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "vida do jogador começa com 3",
+        "__collapse": true
+      },
+      "id": "8f7219ab-1564-4d23-ad0a-10e3d7550aef"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 3
+        },
+        "__collapse": true
+      },
+      "id": "075fb703-3664-430f-babb-b1af02728d76"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Codigo para o jogador trocar de armas",
+        "__collapse": true
       },
       "id": "d5eaa786-b68b-4d83-985e-354e75160d68"
     },
@@ -27,11 +87,11 @@
       "command": "EVENT_SET_INPUT_SCRIPT",
       "args": {
         "input": [
-          "b"
+          "select"
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -59,10 +119,11 @@
                   "command": "EVENT_SET_INPUT_SCRIPT",
                   "args": {
                     "input": [
-                      "a"
+                      "b"
                     ],
                     "override": true,
-                    "__scriptTabs": "press"
+                    "__scriptTabs": "press",
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -125,7 +186,7 @@
                   "command": "EVENT_SET_INPUT_SCRIPT",
                   "args": {
                     "input": [
-                      "a"
+                      "b"
                     ],
                     "override": true,
                     "__scriptTabs": "press"
@@ -172,16 +233,106 @@
         ]
       },
       "id": "65bec7e9-df77-4fef-84c2-d7f975ec231f"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "ativar arma pistola",
+        "__collapse": true
+      },
+      "id": "546307ec-eeef-47c6-be99-45dee575f98b"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b"
+              ],
+              "override": true,
+              "__scriptTabs": "press"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_LAUNCH_PROJECTILE",
+                  "args": {
+                    "__section": "projectile",
+                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "spriteStateId": "",
+                    "actorId": "$self$",
+                    "x": 0,
+                    "y": 0,
+                    "directionType": "actor",
+                    "otherActorId": "$self$",
+                    "direction": "right",
+                    "angle": 0,
+                    "angleVariable": "L0",
+                    "targetActorId": "$self$",
+                    "initialOffset": 0,
+                    "speed": 2,
+                    "animSpeed": 15,
+                    "lifeTime": 4,
+                    "loopAnim": true,
+                    "destroyOnHit": true,
+                    "collisionGroup": "1",
+                    "collisionMask": [
+                      "1"
+                    ]
+                  },
+                  "id": "f5bf70e9-1e7f-4267-bba3-6b23a546a5e2"
+                }
+              ]
+            },
+            "id": "7f78b8f8-b2cb-4073-b539-07f9b1f9728b"
+          }
+        ],
+        "false": []
+      },
+      "id": "417ee029-53d0-47b3-8b0d-d1e6b67bb02f"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [
     {
-      "command": "EVENT_ACTOR_DEACTIVATE",
+      "command": "EVENT_COMMENT",
       "args": {
-        "actorId": "$self$"
+        "text": "remover 1 de vida ao jogadro quando é atacado por tiro",
+        "__collapse": true
       },
-      "id": "68b9c1b5-f4e8-4f2d-be91-a3e75ea21f0e"
+      "id": "d8a05a1e-98dd-4479-9831-1febbb4ed9f4"
+    },
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "0"
+      },
+      "id": "53d8dd9b-1800-4953-ac9f-419f07b8ac28"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.8,
+        "frames": 30
+      },
+      "id": "b06a4650-28cc-4b03-8410-a6c5eb48a160"
     }
   ],
   "playerHit3Script": []

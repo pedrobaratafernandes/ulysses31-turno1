@@ -1,0 +1,340 @@
+{
+  "_resourceType": "actor",
+  "id": "16177b60-ed2c-4df1-8a72-d59c890dbc69",
+  "name": "Minotauro",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_0",
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "sistema de hits para o minotauro"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "remover 1 de vida ao jogador quando é atacado por carga",
+              "__collapse": true
+            },
+            "id": "76614b10-7602-4991-ade5-be4ea0261d80"
+          },
+          {
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "0"
+            },
+            "id": "03bfdea4-a825-4f26-93e9-2cc7119f5f4c"
+          },
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.5,
+              "frames": 30,
+              "shakeDirection": "horizontal",
+              "magnitude": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "002dc566-372e-494b-a7f9-6833e49ca9bd"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "8cea51e1-9268-4ddb-83ab-d33c2452e3e6"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "d305110a-ca78-4a4d-bdec-9c3ad18ee78f"
+          },
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6745f531-b244-440c-a154-70056827d214"
+          }
+        ]
+      },
+      "id": "387abbac-8719-4a74-b945-04d53dde52a5"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "mudar para jogo tipo punch out quando o minotauro fica a 1 de vida",
+        "__collapse": true
+      },
+      "id": "37866014-5d8a-4f71-b73e-012a6c3a675f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "2c638ec8-42f8-4fa9-8422-ab94fe8847de",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "direction": "up",
+              "fadeSpeed": "2"
+            },
+            "id": "6d2d6fc9-efb3-4e25-a427-69a5714b56a5"
+          }
+        ],
+        "false": []
+      },
+      "id": "d73484af-d48e-4184-9163-d757b3dcd090"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "Codigo de ataque do minotauro 0 é placagem, 1 é o tridente",
+        "__collapse": true
+      },
+      "id": "bb71af05-18a5-4eaf-8320-7069d9ef1d87"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "5"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+            "args": {
+              "actorId": "$self$",
+              "operator": ">",
+              "distance": {
+                "type": "number",
+                "value": 5
+              },
+              "otherActorId": "player",
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+                  },
+                  "id": "2c8afe1c-d29a-4f33-af45-22f6651b2a3c"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "$self$",
+                    "speed": 1
+                  },
+                  "id": "7b2f7e93-c4ff-4fc2-9ef4-fd588e7cee43"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "property",
+                      "target": "player",
+                      "property": "xpos"
+                    },
+                    "y": {
+                      "type": "property",
+                      "target": "player",
+                      "property": "ypos"
+                    },
+                    "moveType": "diagonal",
+                    "useCollisions": false
+                  },
+                  "id": "900e0d5a-f6f5-490d-acf3-b43865bd2ec2"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 0.5,
+                    "frames": 30
+                  },
+                  "id": "1115d985-329e-4af0-b7ad-3dc0966a5a18"
+                }
+              ],
+              "false": []
+            },
+            "id": "01d31624-4d5e-4639-bd93-d94503088727"
+          }
+        ],
+        "false": []
+      },
+      "id": "9fc930ee-6575-4f7f-98ab-46c7d98f3222"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "5"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true,
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "e06b922b-c026-4b22-afb8-97dd3d0e06ea"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "__section": "projectile",
+              "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 0,
+              "directionType": "target",
+              "otherActorId": "player",
+              "direction": "right",
+              "angle": 0,
+              "angleVariable": "L0",
+              "targetActorId": "player",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 63,
+              "lifeTime": 0.5,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "2",
+              "collisionMask": [
+                "player"
+              ]
+            },
+            "id": "8624ee69-2d4c-44e8-a557-ef9dd4e6d135"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "7a7bb36e-e20f-42cf-a7b2-ca77bf8cea0e"
+          }
+        ],
+        "false": []
+      },
+      "id": "70297169-c1bd-4804-a073-f08a7c0a68e4"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "sistema de hits para o minotauro"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "remover 1 de vida ao minotauro quando é atacado por tiro",
+              "__collapse": true
+            },
+            "id": "e32c9c07-d153-45d4-9dbd-7eed0a03c720"
+          },
+          {
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "1"
+            },
+            "id": "d9391e67-3553-461a-9963-7720a1ae95e9"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30,
+              "__collapse": false
+            },
+            "id": "74c35d35-0ed2-4bf7-89ba-aed56b470d44"
+          }
+        ]
+      },
+      "id": "b59f2982-dbe4-48bd-8b93-bc566af16b47"
+    }
+  ],
+  "hit3Script": [],
+  "x": 9,
+  "y": 5,
+  "_index": 0
+}

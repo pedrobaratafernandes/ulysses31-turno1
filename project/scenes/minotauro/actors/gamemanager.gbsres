@@ -4,7 +4,7 @@
   "name": "gameManager",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "spriteSheetId": "42899cea-4627-4ca1-82ba-c6a5754d4909",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -35,9 +35,50 @@
   ],
   "updateScript": [
     {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "987039ab-fdf3-4699-9766-dc873a2f9162",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "f48c557d-a969-4be2-bf96-b62072b8e4b0"
+          }
+        ],
+        "false": []
+      },
+      "id": "9d7f9683-c304-4405-a7eb-afc89998b34d"
+    },
+    {
       "command": "EVENT_COMMENT",
       "args": {
-        "text": "Random para o ataque do Minotauro"
+        "text": "Random para o ataque do Minotauro",
+        "__collapse": true
       },
       "id": "db0727fc-7aab-4c0c-88a2-64a8df9989aa"
     },

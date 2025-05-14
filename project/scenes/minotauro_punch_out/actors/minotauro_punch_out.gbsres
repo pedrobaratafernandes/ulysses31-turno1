@@ -1,0 +1,403 @@
+{
+  "_resourceType": "actor",
+  "id": "178f4f37-17d9-465f-9ecc-59af858a6db3",
+  "name": "Minotauro Punch Out",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_2",
+  "script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "0"
+      },
+      "id": "371c21cc-f486-48b1-bb14-20d6b0ad49db"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 1,
+        "frames": 30
+      },
+      "id": "970561b1-1e46-4f07-969d-4d584c93347e"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 3
+        },
+        "__collapse": true
+      },
+      "id": "8ca3ec97-b27e-4342-b310-8e7e6a6746de"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "0",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "647131a5-3982-4f17-8c69-df1b884b3a4c"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "ataque sem carga",
+        "__collapse": true
+      },
+      "id": "6fe72ba9-9e70-4e99-befb-be3f3fb8b9d2"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 1,
+              "__collapse": true
+            },
+            "id": "3a14c601-0c72-4caa-ba31-0ae0fa58865f"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "moveType": "vertical",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "f95f8e84-aa2a-4452-98a0-0dbe9bccbfe7"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30,
+              "__collapse": true
+            },
+            "id": "a758b44a-fad6-4423-b068-acb6b1801ae4"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -7
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": true
+            },
+            "id": "e3969c01-e1d9-482d-b8d1-7d477251c1c8"
+          }
+        ],
+        "false": []
+      },
+      "id": "7fac9741-9b57-4fb3-8d57-befe09f89270"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "ataque com carga",
+        "__collapse": true
+      },
+      "id": "2a3386a6-0679-44a5-a356-652147f9cb19"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 2
+            },
+            "id": "2225bf7b-4220-41a3-af68-ca26ffeb478c"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "moveType": "vertical",
+              "useCollisions": false
+            },
+            "id": "2e3b8214-ddad-433b-8b54-4bdbf928eed7"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+            },
+            "id": "88e6385b-ecba-4dbd-b976-4ce6d6eb5718"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              },
+              "moveType": "vertical",
+              "useCollisions": false
+            },
+            "id": "0f8331ce-3551-45bb-a30a-19b9c2f43656"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "79fc2ff3-df69-4118-8e77-3eed859a590d"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -9
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": false
+            },
+            "id": "1285f2fd-ca54-47f7-9783-92895e6221cf"
+          }
+        ],
+        "false": []
+      },
+      "id": "546d4f12-4773-497c-9164-ce338da7122a"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "ataque com carga",
+        "__collapse": true
+      },
+      "id": "510ef5ef-405f-4a1d-9f79-6a12c707a315"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 2
+            },
+            "id": "de993cfb-153c-4cce-8005-3bcda497e645"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "moveType": "vertical",
+              "useCollisions": false
+            },
+            "id": "a5d8aabe-1b54-4b02-9431-c47c130b1ec1"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+            },
+            "id": "c1f07de4-4aea-4316-99b3-485b8fb89a77"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              },
+              "moveType": "vertical",
+              "useCollisions": false
+            },
+            "id": "51ebffd4-2e46-4418-8b18-5e1823bf3f7f"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "9031b051-166f-48c1-be59-622d5db4ad7f"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": -9
+              },
+              "moveType": "horizontal",
+              "useCollisions": false,
+              "__collapse": false
+            },
+            "id": "3d0e96ad-df1d-4760-af4f-44fee2c0173a"
+          }
+        ],
+        "false": []
+      },
+      "id": "1ad934c5-2bb8-48c5-a1cf-7fadb1bf3b4c"
+    }
+  ],
+  "hit1Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "1"
+      },
+      "id": "2f08fdfd-dc7c-4014-852e-8e803edac459"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "cdb429f1-b6ed-48aa-9126-3e8807eb24e1"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.8,
+        "frames": 30
+      },
+      "id": "b27bdc62-5674-453f-ae5b-cd3680abec56"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "ce86633d-0a9b-4475-9d25-3e3a77bc21ab"
+    }
+  ],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 9,
+  "y": 5,
+  "_index": 0
+}
