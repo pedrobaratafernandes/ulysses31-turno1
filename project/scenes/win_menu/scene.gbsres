@@ -1,9 +1,9 @@
 {
   "_resourceType": "scene",
-  "id": "987039ab-fdf3-4699-9766-dc873a2f9162",
-  "_index": 1,
-  "name": "Game Over",
-  "backgroundId": "e04a496f-8fe4-4aab-b167-ca09db82d390",
+  "id": "5dc8bf96-f437-4e01-aa96-9a00b371019a",
+  "_index": 5,
+  "name": "Win Menu",
+  "backgroundId": "1511eec7-0aed-4a39-81af-281d4d33b15e",
   "tilesetId": "",
   "width": 20,
   "height": 18,
@@ -12,8 +12,8 @@
   "spritePaletteIds": [],
   "collisions": "",
   "autoFadeSpeed": 1,
-  "symbol": "scene_2",
-  "x": 1056,
+  "symbol": "scene_6",
+  "x": 888,
   "y": 264,
   "script": [
     {
@@ -29,8 +29,7 @@
           "left",
           "select"
         ],
-        "__collapseElse": true,
-        "__collapse": true
+        "__collapseElse": true
       },
       "children": {
         "true": [
@@ -49,12 +48,12 @@
               "direction": "",
               "fadeSpeed": "2"
             },
-            "id": "1324fec4-34f5-40d3-879d-5e2ef3f82d96"
+            "id": "6c9aad65-ba27-4712-a2dc-2b27b52df73a"
           }
         ],
         "false": []
       },
-      "id": "6540e4ec-08c2-4fcc-8c28-b82379405132"
+      "id": "bf919957-ad9f-46db-a95e-b3f742ede1cb"
     }
   ],
   "playerHit1Script": [],

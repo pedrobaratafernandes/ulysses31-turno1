@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "4089fd42-6613-4732-a51f-13466095855d",
+  "name": "Start_Screen",
+  "symbol": "bg_start_screen",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Start_Screen.png",
+  "tileColors": ""
+}
