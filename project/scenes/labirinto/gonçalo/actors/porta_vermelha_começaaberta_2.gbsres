@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "435ba679-f208-4e5d-ab30-ff8befa80516",
+  "id": "d4f82167-2d2f-44a5-85b0-6d970227f68f",
   "name": "Porta Vermelha/ComeçaAberta",
   "frame": 0,
   "animate": false,
@@ -14,7 +14,7 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_4",
+  "symbol": "actor_6",
   "script": [],
   "startScript": [],
   "updateScript": [
@@ -31,35 +31,7 @@
       "children": {
         "true": [
           {
-            "id": "a004af92-f5f2-412f-aa73-6c725ed39f49",
-            "command": "EVENT_GROUP",
-            "args": {
-              "__collapse": true,
-              "__label": "portaDesaparece"
-            },
-            "children": {
-              "true": [
-                {
-                  "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
-                  "args": {
-                    "actorId": "$self$"
-                  },
-                  "id": "1b3783b9-1207-4666-a18e-fb44c45ad3f3"
-                },
-                {
-                  "command": "EVENT_ACTOR_HIDE",
-                  "args": {
-                    "actorId": "$self$"
-                  },
-                  "id": "02fc4461-df5a-4008-a0e0-66e11c4ec028"
-                }
-              ]
-            }
-          }
-        ],
-        "false": [
-          {
-            "id": "48573e69-64d7-46d6-a26f-d232a34fd124",
+            "id": "3ffef764-65dd-4fd0-a665-cd5767b5d789",
             "command": "EVENT_GROUP",
             "args": {
               "__label": "portaAparece",
@@ -72,27 +44,55 @@
                   "args": {
                     "actorId": "$self$"
                   },
-                  "id": "b2bd5bf3-210f-4eba-8bd0-92f9c14bb186"
+                  "id": "0cd7e4e4-0b1d-4bd0-95ca-485986676d2d"
                 },
                 {
                   "command": "EVENT_ACTOR_SHOW",
                   "args": {
                     "actorId": "$self$"
                   },
-                  "id": "f3f7b02b-8cd8-4e8d-ab77-fbfbff5dbfce"
+                  "id": "0a498bec-00fc-445b-adcd-2ef18a1d3ad5"
+                }
+              ]
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "949ef8e1-fef0-456e-b0f6-776daa14b524",
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": true,
+              "__label": "portaDesaparece"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "f88c50c9-c98c-4be0-9659-bf79a72a1236"
+                },
+                {
+                  "command": "EVENT_ACTOR_HIDE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "615be486-cd0e-41a6-8581-0bc197c66a19"
                 }
               ]
             }
           }
         ]
       },
-      "id": "e30aeebd-f627-42a7-ba09-baf16f018cd6"
+      "id": "e61ec28a-1600-4359-9974-b4083b8c644a"
     }
   ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 13,
-  "y": 22,
-  "_index": 0
+  "x": 11,
+  "y": 20,
+  "_index": 2
 }
