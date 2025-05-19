@@ -1,0 +1,118 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "99fd3920-15b2-43c5-adea-990879462aa0",
+  "name": "Porta Vermelha/ComeçaAberta",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "id": "4188517a-72a5-41e4-a3eb-a56264ebd139",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Porta Vermelha/ ComeçaAberta",
+        "__collapse": true,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "6"
+              },
+              "__collapseElse": false,
+              "__collapse": true,
+              "__disableElse": false,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "799f2ad4-06e7-4c1e-a0eb-66199404b2bf",
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true,
+                    "__label": "portaDesaparece"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "95f54ce7-bc04-49f3-8416-229aece044bf",
+                        "children": {}
+                      },
+                      {
+                        "command": "EVENT_ACTOR_HIDE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "215b7c17-36a9-46ec-b764-75d56ed8ccf4",
+                        "children": {}
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "3549437d-e565-488b-b55f-d2d7e24da318",
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__label": "portaAparece",
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "d4b12fba-0a9c-4659-9710-4cd2ead9b92e",
+                        "children": {}
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "987aa856-fd86-4a5c-964c-a8886bcbbfcc",
+                        "children": {}
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "id": "fd4643eb-415c-4d6e-81c1-dbb63556b4ab"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__collapse": false
+            },
+            "id": "c78f31c8-9a08-41d4-8893-faec5e06564b"
+          }
+        ]
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

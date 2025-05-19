@@ -1,11 +1,11 @@
 {
   "_resourceType": "actor",
-  "id": "46273975-4f88-44e9-9c43-5a1e2e143771",
-  "name": "AlavancaVermelha",
+  "id": "74e26858-4a53-4bc2-a23f-40807ea24419",
+  "name": "AlavancaAmarela",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-  "prefabId": "d5eb6c1f-064b-4f61-89eb-bc21faf08666",
+  "prefabId": "1f0690ee-0afb-4b82-8736-192096a94bad",
   "direction": "down",
   "moveSpeed": 1,
   "animSpeed": 15,
@@ -14,21 +14,21 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_5",
+  "symbol": "actor_7",
   "script": [
     {
       "command": "EVENT_SET_VALUE",
       "args": {
-        "variable": "6",
+        "variable": "7",
         "value": {
           "type": "not",
           "value": {
             "type": "variable",
-            "value": "6"
+            "value": "7"
           }
         }
       },
-      "id": "0de41e57-5a0d-414d-babc-79e9e8c4ca27"
+      "id": "fdc77956-63a5-4e02-ac0f-fa71a2719069"
     }
   ],
   "startScript": [],
@@ -37,6 +37,6 @@
   "hit2Script": [],
   "hit3Script": [],
   "x": 8,
-  "y": 22,
-  "_index": 1
+  "y": 25,
+  "_index": 3
 }

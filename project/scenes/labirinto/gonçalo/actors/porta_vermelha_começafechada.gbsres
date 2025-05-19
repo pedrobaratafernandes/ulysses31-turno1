@@ -1,11 +1,11 @@
 {
   "_resourceType": "actor",
   "id": "d4f82167-2d2f-44a5-85b0-6d970227f68f",
-  "name": "Porta Vermelha/ComeçaAberta",
+  "name": "Porta Vermelha/ComeçaFechada",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-  "prefabId": "",
+  "prefabId": "105ca7f8-012a-4a0a-8a46-c6217bae95e2",
   "direction": "down",
   "moveSpeed": 1,
   "animSpeed": 15,
@@ -13,7 +13,14 @@
   "isPinned": false,
   "persistent": false,
   "collisionGroup": "",
-  "prefabScriptOverrides": {},
+  "prefabScriptOverrides": {
+    "417591e2-c6b9-433a-98c1-46bbaa40258b": {
+      "id": "417591e2-c6b9-433a-98c1-46bbaa40258b",
+      "args": {
+        "text": "A porta começa fechada\nSe a variavel for true a porta aparece\nSe for false desaparece"
+      }
+    }
+  },
   "symbol": "actor_6",
   "script": [],
   "startScript": [],
@@ -92,7 +99,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 11,
-  "y": 20,
+  "x": 9,
+  "y": 25,
   "_index": 2
 }

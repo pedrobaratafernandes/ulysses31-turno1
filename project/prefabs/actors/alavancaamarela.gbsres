@@ -1,0 +1,237 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "1f0690ee-0afb-4b82-8736-192096a94bad",
+  "name": "AlavancaAmarela",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "7",
+        "value": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "7"
+          }
+        },
+        "__collapse": true
+      },
+      "id": "4aaa3cf1-db7c-45fb-b85b-99a8add16900",
+      "children": {}
+    },
+    {
+      "id": "2135743a-99f4-46cd-822d-52414f4c7ff8",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Porta Amarela/ComeçaAberta",
+        "__collapse": true,
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "7"
+              },
+              "__collapseElse": false,
+              "__collapse": true,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "022b5275-257c-48b6-bd93-d7ace4c8b97a",
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true,
+                    "__label": "portaDesaparece"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                        "args": {
+                          "actorId": "f754d6b6-5b78-44c3-93e4-7b5d741739b4",
+                          "__collapse": true
+                        },
+                        "id": "05e9ae82-bba0-41af-aa77-de80102de470",
+                        "children": {}
+                      },
+                      {
+                        "command": "EVENT_ACTOR_HIDE",
+                        "args": {
+                          "actorId": "f754d6b6-5b78-44c3-93e4-7b5d741739b4",
+                          "__collapse": true
+                        },
+                        "id": "86027a41-bc00-4ea5-b805-700c4d4e325d",
+                        "children": {}
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "b73ae3c8-9d1b-44c5-a5bd-2866ccd5a7c1",
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__label": "portaAparece",
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                        "args": {
+                          "actorId": "f754d6b6-5b78-44c3-93e4-7b5d741739b4",
+                          "__collapse": true
+                        },
+                        "id": "67b9818d-a881-4067-b908-b7a83eb20665",
+                        "children": {}
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "f754d6b6-5b78-44c3-93e4-7b5d741739b4",
+                          "__collapse": true
+                        },
+                        "id": "251d8ee7-8067-479f-a1c3-887e198eb1f1",
+                        "children": {}
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "id": "8b6e7eb3-ca66-44cf-859f-af9e67c31276"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Mexe com a primeira porta amarela aberta",
+              "__collapse": false
+            },
+            "id": "85f04694-2e97-47d7-b0d2-6699f7265e14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "24fe5d1b-7e3b-441f-8cb3-eebda1c9abbe",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Porta Amarela/ComeçaFechada",
+        "__collapse": true,
+        "__comment": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "7"
+              },
+              "__collapseElse": false,
+              "__collapse": false,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "4ea8e940-b597-4fae-8e53-8a1ed2fda54a",
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__label": "portaAparece",
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                        "args": {
+                          "actorId": "bc736d9c-d9ba-4dd6-97a9-0621464fd266",
+                          "__collapse": true
+                        },
+                        "id": "992daae1-39e5-4d14-85c8-fa00a4dc31a6",
+                        "children": {}
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "bc736d9c-d9ba-4dd6-97a9-0621464fd266",
+                          "__collapse": true
+                        },
+                        "id": "f4a9e837-6359-4f55-840c-a8b25a70a78a",
+                        "children": {}
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "9dc88900-9cec-461f-b0e4-024880b98534",
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true,
+                    "__label": "portaDesaparece"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                        "args": {
+                          "actorId": "bc736d9c-d9ba-4dd6-97a9-0621464fd266",
+                          "__collapse": true
+                        },
+                        "id": "805b7651-5751-426a-9d7e-f4ed60e77bb7",
+                        "children": {}
+                      },
+                      {
+                        "command": "EVENT_ACTOR_HIDE",
+                        "args": {
+                          "actorId": "bc736d9c-d9ba-4dd6-97a9-0621464fd266",
+                          "__collapse": true
+                        },
+                        "id": "f7921044-fd41-4dd3-9170-ff80fdc1aad4",
+                        "children": {}
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "id": "4279fb84-db68-40aa-bb5f-455e3b429615"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "Mexe com a primeira porta amarela fechada",
+              "__collapse": true
+            },
+            "id": "a755a82d-a213-4a39-9634-9762448f8189"
+          }
+        ]
+      }
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}
