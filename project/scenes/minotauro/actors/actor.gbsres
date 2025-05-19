@@ -4,7 +4,7 @@
   "name": "",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "spriteSheetId": "42899cea-4627-4ca1-82ba-c6a5754d4909",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -149,12 +149,19 @@
                     "lifeTime": 0.5,
                     "loopAnim": true,
                     "destroyOnHit": true,
-                    "collisionGroup": "1",
+                    "collisionGroup": "3",
                     "collisionMask": [
                       "1"
                     ]
                   },
                   "id": "472ca689-672b-4155-8dae-262b527efd18"
+                },
+                {
+                  "command": "EVENT_DEC_VALUE",
+                  "args": {
+                    "variable": "1"
+                  },
+                  "id": "ed864c18-404d-4f4a-8956-a08abed2ddf5"
                 }
               ]
             },
