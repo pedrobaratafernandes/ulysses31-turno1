@@ -1,0 +1,79 @@
+{
+  "_resourceType": "scene",
+  "id": "3c524a41-8468-4f24-a4ca-8438d0d06aae",
+  "_index": 6,
+  "name": "Labirinto/Gonçalo",
+  "backgroundId": "609d6077-b799-4e1c-9056-8e97dd735068",
+  "tilesetId": "",
+  "width": 30,
+  "height": 30,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0fe+002+0ff+00c+0f!002+0f!009+0f!002+0f2+00c+0f!002+0f!009+0f!002+0f2+002+0fb+002+0f5+002+0f!002+0f!002+0f2+0016+0f!005+0f2+0016+0f!005+0f4+002+0f16+002+0f2+004+0f!0017+0f2+004+0f!0017+0f2+002+0f3+002+0fb+00a+0f2+004+0f!002+0f!004+0f!004+0f2+009+0f2+004+0f!002+0f!004+0f!004+0f2+009+0f4+002+0f!002+0f!002+0f3+004+0f3+007+0f3+004+0f!002+0f!00b+0f!008+0f2+004+0f!002+0f!00b+0f!008+0f2+002+0f3+00e+0f!008+0f2+002+0f3+007+0f5+002+0f!008+0ff+002+0f!003+0f!008+0f3+00b+0f!002+0f!003+0f!008+0f3+00b+0f!002+0f!003+0f!008+0f3+002+0f7+002+0f!002+0f5+008+0f3+005+0f!0015+0f3+005+0f!0015+0f3+002+0f7+002+0f!00f+0f3+005+0f!005+0f!00f+0f3+005+0f!005+0f!00f+0f3+002+0fa+00f+0f3+002+0f!00b+0f!00c+0f3+002+0f!00b+0f!00c+0ff+002+0fe+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_7",
+  "x": 443.2000000476837,
+  "y": 471,
+  "script": [
+    {
+      "id": "a100ee16-c617-45e9-a52a-b798632f72a4",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": true,
+        "__label": "inicializacaoDePortas"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "3aee060c-7e00-4657-8890-a7ec79758ef8"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "7",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "8716356c-f203-4b66-8920-021d12224278"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "8",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "64cdb557-c53b-4e73-b900-8f44f988da1c"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "0468597d-9756-4603-8b5e-1f939d3d5815"
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

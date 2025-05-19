@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "609d6077-b799-4e1c-9056-8e97dd735068",
+  "name": "Niveis_temporários/Maze1_small",
+  "symbol": "bg_niveis_tempor_rios_maze1",
+  "width": 30,
+  "height": 30,
+  "imageWidth": 240,
+  "imageHeight": 240,
+  "filename": "Niveis_temporários/Maze1_small.png",
+  "tileColors": ""
+}

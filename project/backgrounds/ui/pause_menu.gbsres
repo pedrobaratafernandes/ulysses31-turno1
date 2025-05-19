@@ -1,12 +1,13 @@
 {
   "_resourceType": "background",
   "id": "e3bbc53c-5905-4826-b05d-b023a817fee3",
-  "name": "Pause_Menu",
+  "name": "UI/Pause_Menu",
   "symbol": "bg_pause_menu",
   "width": 20,
   "height": 18,
   "imageWidth": 160,
   "imageHeight": 144,
-  "filename": "Pause_Menu.png",
-  "tileColors": ""
+  "filename": "UI/Pause_Menu.png",
+  "tileColors": "",
+  "autoColor": false
 }

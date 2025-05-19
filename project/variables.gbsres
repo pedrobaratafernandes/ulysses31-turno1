@@ -35,6 +35,26 @@
       "id": "c70a935f-ed10-4843-bd47-ece80704ea8d__L0",
       "name": "Local 0",
       "symbol": "var_local_0"
+    },
+    {
+      "id": "6",
+      "name": "alavancaVermelha",
+      "symbol": "var_alavancavermelha"
+    },
+    {
+      "id": "7",
+      "name": "alavancaAmarela",
+      "symbol": "var_alavancaamarela"
+    },
+    {
+      "id": "8",
+      "name": "alavancaVerde",
+      "symbol": "var_alavancaverde"
+    },
+    {
+      "id": "9",
+      "name": "alavancaAzul",
+      "symbol": "var_alavancaazul"
     }
   ]
 }
