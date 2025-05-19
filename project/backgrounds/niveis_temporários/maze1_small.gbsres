@@ -8,5 +8,6 @@
   "imageWidth": 240,
   "imageHeight": 240,
   "filename": "Niveis_temporários/Maze1_small.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }
