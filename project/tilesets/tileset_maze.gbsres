@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "24954f06-76db-412e-9e9f-4377796bd3a3",
+  "name": "TileSet_Maze",
+  "symbol": "tileset_tileset_maze",
+  "width": 30,
+  "height": 18,
+  "imageWidth": 240,
+  "imageHeight": 144,
+  "filename": "TileSet_Maze.png"
+}
