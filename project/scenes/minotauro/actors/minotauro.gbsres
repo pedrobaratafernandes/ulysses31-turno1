@@ -285,7 +285,8 @@
             "command": "EVENT_WAIT",
             "args": {
               "time": 1,
-              "frames": 30
+              "frames": 30,
+              "__collapse": false
             },
             "id": "7a7bb36e-e20f-42cf-a7b2-ca77bf8cea0e"
           }
@@ -333,7 +334,15 @@
       "id": "b59f2982-dbe4-48bd-8b93-bc566af16b47"
     }
   ],
-  "hit3Script": [],
+  "hit3Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "1"
+      },
+      "id": "ec3add96-2df0-48f3-a40a-00db6f8f37fc"
+    }
+  ],
   "x": 9,
   "y": 5,
   "_index": 0

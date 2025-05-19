@@ -159,7 +159,8 @@
                 {
                   "command": "EVENT_DEC_VALUE",
                   "args": {
-                    "variable": "1"
+                    "variable": "1",
+                    "__comment": true
                   },
                   "id": "ed864c18-404d-4f4a-8956-a08abed2ddf5"
                 }
@@ -218,13 +219,20 @@
                           "lifeTime": 4,
                           "loopAnim": true,
                           "destroyOnHit": true,
-                          "collisionGroup": "1",
+                          "collisionGroup": "3",
                           "collisionMask": [
-                            "1",
-                            "2"
+                            "1"
                           ]
                         },
                         "id": "5e29c45e-be03-460b-a4cf-f601af0be910"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "1",
+                          "__comment": true
+                        },
+                        "id": "8d321a18-53a3-450a-a90f-64608e1a0c66"
                       }
                     ]
                   },
