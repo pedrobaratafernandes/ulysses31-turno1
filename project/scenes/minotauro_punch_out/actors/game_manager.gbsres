@@ -285,7 +285,7 @@
             "value": 3
           }
         },
-        "__collapse": false
+        "__collapse": true
       },
       "id": "cb8f9266-d351-499c-84ed-4fd205f93264"
     },
@@ -352,7 +352,7 @@
     {
       "command": "EVENT_COMMENT",
       "args": {
-        "text": "se minotauro morre ir para a fase 2 do minotauro - punch out",
+        "text": "se minotauro morre ir para win game",
         "__collapse": true
       },
       "id": "56bd3d46-ec37-4f44-9d3d-c42cb0aead86"
@@ -372,7 +372,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [

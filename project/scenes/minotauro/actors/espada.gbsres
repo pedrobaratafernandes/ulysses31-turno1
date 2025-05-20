@@ -1,0 +1,42 @@
+{
+  "_resourceType": "actor",
+  "id": "3f3f2ddd-d3d3-45c1-8605-0c4e5605ec7d",
+  "name": "Espada",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "99f3c278-b088-4a9d-8eae-6c9f26bffd4e",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "2",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_11",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "5739dce1-9841-4b56-b9eb-b784bebc047e"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "d16be08d-56fa-4ba7-ae6a-1226af1841be"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 0,
+  "y": 4,
+  "_index": 3
+}

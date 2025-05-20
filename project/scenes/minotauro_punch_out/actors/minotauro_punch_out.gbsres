@@ -61,6 +61,26 @@
     {
       "command": "EVENT_COMMENT",
       "args": {
+        "text": "vida 3 minotauro",
+        "__collapse": true
+      },
+      "id": "7e9b1fa4-3e2f-41cf-8513-95a6f2b8c20a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 3
+        },
+        "__collapse": true
+      },
+      "id": "a9a2798b-5afb-433d-93e8-fb99d8b499c2"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
         "text": "ataque sem carga",
         "__collapse": true
       },

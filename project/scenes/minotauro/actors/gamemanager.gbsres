@@ -16,23 +16,7 @@
   "prefabScriptOverrides": {},
   "symbol": "actor_1",
   "script": [],
-  "startScript": [
-    {
-      "command": "EVENT_COMMENT",
-      "args": {
-        "text": "Esperar um segundo"
-      },
-      "id": "e1c9e42e-dc35-4250-8786-ceb2998985ed"
-    },
-    {
-      "command": "EVENT_WAIT",
-      "args": {
-        "time": 1,
-        "frames": 30
-      },
-      "id": "f1ae9dde-10a8-4548-8f8a-53dfc355085a"
-    }
-  ],
+  "startScript": [],
   "updateScript": [
     {
       "command": "EVENT_IF",
@@ -48,7 +32,8 @@
             "value": 0
           }
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -92,7 +77,8 @@
             "type": "number",
             "value": 2
           }
-        }
+        },
+        "__collapse": true
       },
       "id": "d6d0b732-eb91-47c1-b4ac-54d130691dee"
     },
@@ -100,7 +86,8 @@
       "command": "EVENT_WAIT",
       "args": {
         "time": 1.5,
-        "frames": 30
+        "frames": 30,
+        "__collapse": true
       },
       "id": "1e74baf0-50cd-4f9f-b687-667617dada06"
     }

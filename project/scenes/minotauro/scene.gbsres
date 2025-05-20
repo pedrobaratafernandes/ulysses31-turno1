@@ -84,14 +84,6 @@
       "id": "d5eaa786-b68b-4d83-985e-354e75160d68"
     },
     {
-      "command": "EVENT_COMMENT",
-      "args": {
-        "text": "ativar arma pistola",
-        "__collapse": true
-      },
-      "id": "546307ec-eeef-47c6-be99-45dee575f98b"
-    },
-    {
       "command": "EVENT_SET_INPUT_SCRIPT",
       "args": {
         "input": [
@@ -133,31 +125,43 @@
       "id": "a5a43a26-1b2b-43fa-aef9-10ee7365b724"
     }
   ],
-  "playerHit1Script": [],
-  "playerHit2Script": [
+  "playerHit1Script": [
     {
-      "command": "EVENT_COMMENT",
+      "command": "EVENT_GROUP",
       "args": {
-        "text": "remover 1 de vida ao jogadro quando é atacado por tiro",
-        "__collapse": true
+        "__label": "sistema de hits para o minotauro",
+        "__collapse": false
       },
-      "id": "d8a05a1e-98dd-4479-9831-1febbb4ed9f4"
-    },
-    {
-      "command": "EVENT_DEC_VALUE",
-      "args": {
-        "variable": "0"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "remover 1 de vida ao minotauro quando é atacado por tiro",
+              "__collapse": true
+            },
+            "id": "914c6066-c349-452a-b2d6-1edad8736237"
+          },
+          {
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "0"
+            },
+            "id": "dcba17b5-7367-4b9f-9ab4-e3c0ebaf5a8d"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 1,
+              "frames": 30
+            },
+            "id": "3a6af542-3c37-4a2d-b0cd-4fe3fc82d57f"
+          }
+        ]
       },
-      "id": "53d8dd9b-1800-4953-ac9f-419f07b8ac28"
-    },
-    {
-      "command": "EVENT_WAIT",
-      "args": {
-        "time": 0.8,
-        "frames": 30
-      },
-      "id": "b06a4650-28cc-4b03-8410-a6c5eb48a160"
+      "id": "6a5d7e42-7168-45de-afb9-e2b59fb0f34e"
     }
   ],
+  "playerHit2Script": [],
   "playerHit3Script": []
 }

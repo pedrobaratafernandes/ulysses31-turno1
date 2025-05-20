@@ -154,7 +154,7 @@
         },
         "__collapseElse": true,
         "__collapse": true,
-        "__comment": false
+        "__comment": true
       },
       "children": {
         "true": [
@@ -274,9 +274,10 @@
               "lifeTime": 0.5,
               "loopAnim": true,
               "destroyOnHit": true,
-              "collisionGroup": "2",
+              "collisionGroup": "1",
               "collisionMask": [
-                "player"
+                "player",
+                "2"
               ]
             },
             "id": "8624ee69-2d4c-44e8-a557-ef9dd4e6d135"
@@ -296,12 +297,12 @@
       "id": "70297169-c1bd-4804-a073-f08a7c0a68e4"
     }
   ],
-  "hit1Script": [],
-  "hit2Script": [
+  "hit1Script": [
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__label": "sistema de hits para o minotauro"
+        "__label": "sistema de hits para o minotauro",
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -311,38 +312,30 @@
               "text": "remover 1 de vida ao minotauro quando é atacado por tiro",
               "__collapse": true
             },
-            "id": "e32c9c07-d153-45d4-9dbd-7eed0a03c720"
+            "id": "f570ec10-1f1f-4b33-a85d-74487b0cd8f0"
           },
           {
             "command": "EVENT_DEC_VALUE",
             "args": {
               "variable": "1"
             },
-            "id": "d9391e67-3553-461a-9963-7720a1ae95e9"
+            "id": "c170e516-a8c0-4268-a895-45c31af4b91f"
           },
           {
             "command": "EVENT_WAIT",
             "args": {
               "time": 1,
-              "frames": 30,
-              "__collapse": false
+              "frames": 30
             },
-            "id": "74c35d35-0ed2-4bf7-89ba-aed56b470d44"
+            "id": "6236298e-e7ab-4558-9f19-6dd5b2f06687"
           }
         ]
       },
-      "id": "b59f2982-dbe4-48bd-8b93-bc566af16b47"
+      "id": "cd0daab7-5642-4db3-9236-ebbf9c27ea63"
     }
   ],
-  "hit3Script": [
-    {
-      "command": "EVENT_DEC_VALUE",
-      "args": {
-        "variable": "1"
-      },
-      "id": "ec3add96-2df0-48f3-a40a-00db6f8f37fc"
-    }
-  ],
+  "hit2Script": [],
+  "hit3Script": [],
   "x": 9,
   "y": 5,
   "_index": 0
