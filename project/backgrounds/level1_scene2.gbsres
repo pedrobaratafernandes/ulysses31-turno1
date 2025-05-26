@@ -8,5 +8,6 @@
   "imageWidth": 192,
   "imageHeight": 192,
   "filename": "Level1_Scene2.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }
