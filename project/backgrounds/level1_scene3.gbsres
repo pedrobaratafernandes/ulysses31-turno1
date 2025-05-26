@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "6531568b-c7dd-48d3-8d0a-657f2242e0ee",
+  "name": "Level1_Scene3",
+  "symbol": "bg_level1_scene3",
+  "width": 28,
+  "height": 22,
+  "imageWidth": 224,
+  "imageHeight": 176,
+  "filename": "Level1_Scene3.png",
+  "tileColors": ""
+}
