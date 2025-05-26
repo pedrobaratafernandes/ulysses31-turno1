@@ -4,7 +4,7 @@
   "name": "AlavancaAmarela",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "spriteSheetId": "51fd0927-0ac5-4000-aa18-ba2a82e3aa08",
   "moveSpeed": 1,
   "animSpeed": 15,
   "paletteId": "",
@@ -46,7 +46,7 @@
                 "value": "7"
               },
               "__collapseElse": false,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false
             },
             "children": {
@@ -55,7 +55,7 @@
                   "id": "022b5275-257c-48b6-bd93-d7ace4c8b97a",
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": true,
+                    "__collapse": false,
                     "__label": "portaDesaparece"
                   },
                   "children": {
@@ -64,7 +64,7 @@
                         "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
                         "args": {
                           "actorId": "f754d6b6-5b78-44c3-93e4-7b5d741739b4",
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "id": "05e9ae82-bba0-41af-aa77-de80102de470",
                         "children": {}

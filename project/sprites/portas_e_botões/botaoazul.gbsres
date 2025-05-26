@@ -1,0 +1,115 @@
+{
+  "_resourceType": "sprite",
+  "id": "f91310fb-3771-46bc-912c-a46de96558ed",
+  "name": "Portas e Botões/botaoAzul",
+  "symbol": "sprite_portas_e_bot_es_bot__0",
+  "numFrames": 0.5,
+  "filename": "Portas e Botões/botaoAzul.png",
+  "checksum": "5edd6668a23e755d84afd5763da9f5f27fb9554b",
+  "width": 8,
+  "height": 8,
+  "states": [
+    {
+      "id": "06a11c84-84df-4543-8556-1c9b2661a7d1",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "9d901fcc-70ef-4716-8fe0-6bcedad3b554",
+          "frames": [
+            {
+              "id": "68011178-c14b-4280-b5e0-9dca37b80177",
+              "tiles": [
+                {
+                  "id": "15416238-cef4-4fd6-9251-7232f202043e",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": -8,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dd742395-c061-4e09-96ce-2de8c535d034",
+          "frames": [
+            {
+              "id": "56efe1b6-2c62-4baa-9a1a-58288cd7fbd0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "36fafe7c-1f24-49c4-a7b4-7773869abb82",
+          "frames": [
+            {
+              "id": "0749a5c9-8a1c-49e9-86c0-0fdd4dc22238",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2cccbce4-f236-40d6-888f-b8b1fa54a4ca",
+          "frames": [
+            {
+              "id": "70ca826a-fc13-4e17-8c27-8bad154c8621",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "9959c4e9-717a-4d6a-9339-795dc679e7f1",
+          "frames": [
+            {
+              "id": "3e6b6979-25af-44f3-82c8-0577de1b90b4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a5efbaae-9c4a-4e87-ad6b-c1bdf30f8a9c",
+          "frames": [
+            {
+              "id": "e355b5ef-a4b0-44e2-8022-8353e957b295",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "de3b4c73-fcb6-451e-a141-a513bbad2932",
+          "frames": [
+            {
+              "id": "3d5833a6-3762-40ae-a347-e1ef249e0bb6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5adb6831-196a-4cc9-ac9c-c65ad939dac6",
+          "frames": [
+            {
+              "id": "edeedca7-335a-456b-be5a-7e47c7fe3bd5",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 1,
+  "canvasWidth": 8,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 8,
+  "boundsHeight": 8,
+  "animSpeed": 15
+}

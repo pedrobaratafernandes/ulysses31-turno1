@@ -1,0 +1,128 @@
+{
+  "_resourceType": "sprite",
+  "id": "02434d6e-53a5-44fc-a829-f8ce16cbf48d",
+  "name": "Portas e Botões/portaVermVertical",
+  "symbol": "sprite_portas_e_bot_es_port_6",
+  "numFrames": 0.5,
+  "filename": "Portas e Botões/portaVermVertical.png",
+  "checksum": "3b7ccef7b27adde1dde4bcd12266d808e23bba4d",
+  "width": 8,
+  "height": 16,
+  "states": [
+    {
+      "id": "2f01d515-1916-448e-aafd-dd1073f686e2",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "ccdb04f9-1e28-414c-a120-7bdbeefafd49",
+          "frames": [
+            {
+              "id": "ad958dc4-e842-47ff-9cd6-607e09b3e127",
+              "tiles": [
+                {
+                  "id": "7cec4544-14aa-4926-92af-c116c24f1da4",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": -8,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP1",
+                  "paletteIndex": 0,
+                  "priority": false
+                },
+                {
+                  "id": "b34c2601-0b5c-401b-aa58-416fc4a89b1b",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d6ee739f-ca47-4ca0-bfbd-8c542bda62d9",
+          "frames": [
+            {
+              "id": "bf8a43c8-391f-4175-b960-a3e0e2e48653",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "eb921214-8ece-49bd-8fd6-e7478adbe792",
+          "frames": [
+            {
+              "id": "663d4840-b2de-40ed-9fe1-33c075e2404c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2c6d0227-62fe-4aba-94b1-d659ae39d721",
+          "frames": [
+            {
+              "id": "f7563fcf-f36e-4820-a67b-a7d120e4be2b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f7f1d596-b768-4652-bead-89ac146f5fac",
+          "frames": [
+            {
+              "id": "beb0f8e6-078a-43f1-9fd7-93aad35fc1d9",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "3a47d1a2-1822-4049-b7ef-d3bbc98833c7",
+          "frames": [
+            {
+              "id": "63d451c4-96cd-4cbe-b4e3-abb27e929345",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5fe6b9ea-f044-4060-8502-ece8a14f26af",
+          "frames": [
+            {
+              "id": "83df377f-2cd7-44df-b0b7-ddaaa87c29d3",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "6c9cc619-6d63-467b-ab3e-a17b312875ea",
+          "frames": [
+            {
+              "id": "cc4f7741-cb49-4c9c-a943-f0eb76d03a06",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 1,
+  "canvasWidth": 8,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 8,
+  "boundsHeight": 16,
+  "animSpeed": 15
+}
