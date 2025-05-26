@@ -118,7 +118,7 @@
               },
               "y": {
                 "type": "number",
-                "value": 15
+                "value": 14
               },
               "direction": "up",
               "fadeSpeed": "2"
@@ -240,7 +240,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": false,
+        "__collapse": true,
         "__comment": false
       },
       "children": {
