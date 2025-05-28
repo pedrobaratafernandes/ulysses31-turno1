@@ -32,9 +32,19 @@
             "id": "76614b10-7602-4991-ade5-be4ea0261d80"
           },
           {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$",
+              "__comment": false
+            },
+            "id": "8cea51e1-9268-4ddb-83ab-d33c2452e3e6"
+          },
+          {
             "command": "EVENT_DEC_VALUE",
             "args": {
-              "variable": "0"
+              "variable": "0",
+              "__collapse": true,
+              "__comment": true
             },
             "id": "03bfdea4-a825-4f26-93e9-2cc7119f5f4c"
           },
@@ -47,30 +57,26 @@
               "magnitude": {
                 "type": "number",
                 "value": 1
-              }
+              },
+              "__collapse": true
             },
             "id": "002dc566-372e-494b-a7f9-6833e49ca9bd"
-          },
-          {
-            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
-            "args": {
-              "actorId": "$self$"
-            },
-            "id": "8cea51e1-9268-4ddb-83ab-d33c2452e3e6"
           },
           {
             "command": "EVENT_WAIT",
             "args": {
               "time": 1,
               "frames": 30,
-              "__collapse": false
+              "__collapse": false,
+              "__comment": false
             },
             "id": "d305110a-ca78-4a4d-bdec-9c3ad18ee78f"
           },
           {
             "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
             "args": {
-              "actorId": "$self$"
+              "actorId": "$self$",
+              "__comment": false
             },
             "id": "6745f531-b244-440c-a154-70056827d214"
           }
@@ -93,14 +99,14 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "eq",
+          "type": "lte",
           "valueA": {
             "type": "variable",
             "value": "1"
           },
           "valueB": {
             "type": "number",
-            "value": 1
+            "value": 0
           }
         },
         "__collapseElse": true,
@@ -154,7 +160,7 @@
         },
         "__collapseElse": true,
         "__collapse": true,
-        "__comment": true
+        "__comment": false
       },
       "children": {
         "true": [

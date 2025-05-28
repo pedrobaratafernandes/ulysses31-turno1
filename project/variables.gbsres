@@ -55,6 +55,11 @@
       "id": "c70a935f-ed10-4843-bd47-ece80704ea8d__L0",
       "name": "Local 0",
       "symbol": "var_local_0"
+    },
+    {
+      "id": "16177b60-ed2c-4df1-8a72-d59c890dbc69__L0",
+      "name": "tirarVida",
+      "symbol": "var_tirarvida"
     }
   ]
 }

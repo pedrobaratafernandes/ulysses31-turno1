@@ -1,8 +1,0 @@
-{
-  "_resourceType": "sound",
-  "id": "e356d569-09ad-4cdf-86b8-0dcda68b4b28",
-  "name": "Game Over.vgm",
-  "symbol": "sound_game_over_vgm",
-  "filename": "Game Over.vgm",
-  "type": "vgm"
-}

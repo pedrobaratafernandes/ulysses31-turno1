@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "ec8751b6-4cf5-4ea4-98bc-f85be5252127",
+  "_index": 13,
+  "name": "CutScene",
+  "backgroundId": "47bce569-19a7-4889-b11d-8bd6106170f9",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_14",
+  "x": 552,
+  "y": 72,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}
