@@ -17,6 +17,11 @@
   "y": 264,
   "script": [
     {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "552d4a14-3c32-4c48-a71d-4268f80f172e"
+    },
+    {
       "command": "EVENT_IF_INPUT",
       "args": {
         "input": [
@@ -54,6 +59,13 @@
         "false": []
       },
       "id": "d03aca46-1125-4962-af1e-0385b99e9530"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "f50428ab-a084-4591-9bba-2ba10fe7b1c6"
+      },
+      "id": "5149fe2b-cc80-451b-894b-2c5312a1d743"
     }
   ],
   "playerHit1Script": [],
