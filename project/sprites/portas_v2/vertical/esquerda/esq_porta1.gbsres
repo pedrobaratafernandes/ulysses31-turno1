@@ -1,0 +1,101 @@
+{
+  "_resourceType": "sprite",
+  "id": "d116d49e-f7a7-4c75-a1db-a1eb80f6c2f1",
+  "name": "portas_V2/vertical/esquerda/esq_porta1",
+  "symbol": "sprite_portas_v2_vertical_e",
+  "numFrames": 0.5,
+  "filename": "portas_V2/vertical/esquerda/esq_porta1.png",
+  "checksum": "b43b45de14fd3d3c13aa787329bee215499a577a",
+  "width": 8,
+  "height": 16,
+  "states": [
+    {
+      "id": "b558f5d7-1c6e-4a91-ab73-5142fd2346d6",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "a7ade4a6-4a7c-4f57-9a20-706b43bd5cb7",
+          "frames": [
+            {
+              "id": "33248d26-2ece-49bc-aac5-f2b3a5b25102",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "1137137c-8608-4e81-8515-084f408da816",
+          "frames": [
+            {
+              "id": "f8c44fb6-1466-4adf-8be4-6e561edef866",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e21329e1-0d68-4235-a650-5492451d3147",
+          "frames": [
+            {
+              "id": "5ee24020-8fe2-4b39-b5fe-d9556c3971a6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "91ad153d-84c7-4daf-a20b-26c86b1df7fb",
+          "frames": [
+            {
+              "id": "286e8a72-e68b-4983-adbd-d01ee41cda6a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "8301a1f1-0559-4612-8dd9-b1f99466a16a",
+          "frames": [
+            {
+              "id": "72e17db1-dc6f-44d8-8cd8-35c84022f1d3",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0ff9c640-28b2-43df-8bb1-c08c2918f803",
+          "frames": [
+            {
+              "id": "7298f78f-7890-49fa-b4e0-57caca00f6e4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d222038d-7758-46ca-8f2f-108fd5cd53e0",
+          "frames": [
+            {
+              "id": "f291e10e-5866-4430-bacb-df14ca8fd841",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "836b38d7-edbe-4db5-b0cd-0386d694a830",
+          "frames": [
+            {
+              "id": "dbc4d740-9b59-4934-aaf6-d81ab6ba7e08",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15
+}

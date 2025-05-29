@@ -13,8 +13,8 @@
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_6",
-  "x": 888,
-  "y": 264,
+  "x": 896,
+  "y": 30,
   "script": [
     {
       "command": "EVENT_MUSIC_STOP",

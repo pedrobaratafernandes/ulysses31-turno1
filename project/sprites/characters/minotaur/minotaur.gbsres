@@ -1,0 +1,101 @@
+{
+  "_resourceType": "sprite",
+  "id": "1542c822-212e-44a3-ad2c-96b11df3447e",
+  "name": "Characters/Minotaur/minotaur",
+  "symbol": "sprite_characters_minotaur__2",
+  "numFrames": 8,
+  "filename": "Characters/Minotaur/minotaur.png",
+  "checksum": "8172ed9852b2d0c2cf631d5a99f46cda33846004",
+  "width": 128,
+  "height": 32,
+  "states": [
+    {
+      "id": "00a75537-1fdc-44d7-b4fd-09532c66bb3c",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "09248abd-fd2d-4105-ad1e-1b8c6c2912a1",
+          "frames": [
+            {
+              "id": "b29e0cf7-bec1-44a6-826f-73dcde1bdc4b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ee391ed8-b237-45a6-ae8b-ca575c7d0b36",
+          "frames": [
+            {
+              "id": "220ea952-5bac-4e7c-9eb7-8df1d325290f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "51b62725-492f-40e4-80e3-74d470e81630",
+          "frames": [
+            {
+              "id": "7469b79f-7287-4868-b926-0d477b090e35",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "4b892b67-c65f-4e23-9d37-96d37c526100",
+          "frames": [
+            {
+              "id": "4f8de91a-d0fe-435e-b9ac-f9b179fdd907",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ec5ce516-b08b-4e08-92f7-25c9a240dab9",
+          "frames": [
+            {
+              "id": "13de5e0d-839f-4efa-b5b2-fbed4e94d1d5",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "44baca62-4f6d-44c0-a0a1-b245a5c78b25",
+          "frames": [
+            {
+              "id": "5bf77e26-2e70-41c2-aa70-1419090b71a0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2f46709b-6fdd-419c-ac91-1bf45bbf74f6",
+          "frames": [
+            {
+              "id": "e60aa470-5de2-44eb-940e-b622b9462aeb",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "309f6206-850c-4c36-9312-db333e855fc2",
+          "frames": [
+            {
+              "id": "af2de8bd-2cc5-4298-bc39-0f2b095fd560",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15
+}
