@@ -843,7 +843,7 @@
                   "command": "EVENT_LAUNCH_PROJECTILE",
                   "args": {
                     "__section": "projectile",
-                    "spriteSheetId": "f409931a-9a20-493c-bfe9-2cd28bef6413",
+                    "spriteSheetId": "3bb76689-b432-46af-9150-592d4309cac1",
                     "spriteStateId": "",
                     "actorId": "player",
                     "x": 0,
@@ -884,16 +884,6 @@
         ]
       },
       "id": "3d7e42b9-3001-4a26-b7fc-7f4b3f6c3406"
-    },
-    {
-      "command": "EVENT_TEXT_DRAW",
-      "args": {
-        "text": "$01$",
-        "x": 1,
-        "y": 1,
-        "location": "background"
-      },
-      "id": "49739c52-d964-4168-865a-405fbe8f3b6c"
     }
   ],
   "hit1Script": [],
