@@ -1,0 +1,67 @@
+{
+  "_resourceType": "actor",
+  "id": "74e26858-4a53-4bc2-a23f-40807ea24419",
+  "name": "Alavanca2",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "1f0690ee-0afb-4b82-8736-192096a94bad",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "6db5ce37-57eb-48ca-a402-87544bad7363": {
+      "id": "6db5ce37-57eb-48ca-a402-87544bad7363",
+      "args": {
+        "actorId": "0a4e0c3c-ca69-4cea-a646-9b70819bb0c9"
+      }
+    },
+    "edc75ee8-4cc1-45de-bd9f-fa206c00660a": {
+      "id": "edc75ee8-4cc1-45de-bd9f-fa206c00660a",
+      "args": {
+        "actorId": "0a4e0c3c-ca69-4cea-a646-9b70819bb0c9"
+      }
+    },
+    "9c5c846f-d30c-4fc8-b7e2-c008789f8952": {
+      "id": "9c5c846f-d30c-4fc8-b7e2-c008789f8952",
+      "args": {
+        "actorId": "0a4e0c3c-ca69-4cea-a646-9b70819bb0c9"
+      }
+    },
+    "e3c96e24-9751-453d-8096-b66f6b170c14": {
+      "id": "e3c96e24-9751-453d-8096-b66f6b170c14",
+      "args": {
+        "actorId": "0a4e0c3c-ca69-4cea-a646-9b70819bb0c9"
+      }
+    }
+  },
+  "symbol": "actor_7",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "7",
+        "value": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "7"
+          }
+        }
+      },
+      "id": "fdc77956-63a5-4e02-ac0f-fa71a2719069"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 9,
+  "y": 13,
+  "_index": 4
+}

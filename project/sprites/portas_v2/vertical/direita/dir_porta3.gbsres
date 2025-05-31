@@ -20,7 +20,21 @@
           "frames": [
             {
               "id": "3b72acfb-badd-4c18-ae6b-3680c947ebdf",
-              "tiles": []
+              "tiles": [
+                {
+                  "id": "26cd2b19-2f88-4022-95a3-c6adf6c6232d",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
             }
           ]
         },
@@ -90,12 +104,12 @@
       ]
     }
   ],
-  "numTiles": 0,
+  "numTiles": 1,
   "canvasWidth": 16,
   "canvasHeight": 16,
-  "boundsX": 0,
+  "boundsX": 8,
   "boundsY": 0,
-  "boundsWidth": 16,
+  "boundsWidth": 8,
   "boundsHeight": 16,
   "animSpeed": 15
 }

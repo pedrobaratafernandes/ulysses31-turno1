@@ -8,5 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "cutscenes/02_cutscene.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

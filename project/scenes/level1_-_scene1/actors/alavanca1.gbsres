@@ -1,0 +1,145 @@
+{
+  "_resourceType": "actor",
+  "id": "46273975-4f88-44e9-9c43-5a1e2e143771",
+  "name": "Alavanca1",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "d5eb6c1f-064b-4f61-89eb-bc21faf08666",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "5450a081-9070-4f09-8be8-96589c0bf08f": {
+      "id": "5450a081-9070-4f09-8be8-96589c0bf08f",
+      "args": {
+        "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516"
+      }
+    },
+    "ca020055-b4bc-4bf5-9cca-ac40549526c5": {
+      "id": "ca020055-b4bc-4bf5-9cca-ac40549526c5",
+      "args": {
+        "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516"
+      }
+    },
+    "3be37545-41f5-498e-ac43-1f450127af96": {
+      "id": "3be37545-41f5-498e-ac43-1f450127af96",
+      "args": {
+        "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516"
+      }
+    },
+    "08e80e4b-f60a-499f-9754-f349329f8ca5": {
+      "id": "08e80e4b-f60a-499f-9754-f349329f8ca5",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "2a5c8e40-16f0-4fe3-9010-2a7fa77530db": {
+      "id": "2a5c8e40-16f0-4fe3-9010-2a7fa77530db",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "5fc411a5-2f5b-4923-a20e-99c72ea4e7d7": {
+      "id": "5fc411a5-2f5b-4923-a20e-99c72ea4e7d7",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "200eb43b-4b1a-4e50-8322-0f72bb6e3ecd": {
+      "id": "200eb43b-4b1a-4e50-8322-0f72bb6e3ecd",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "0a27429a-c833-4cdb-bb36-77c79e19d989": {
+      "id": "0a27429a-c833-4cdb-bb36-77c79e19d989",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "7cdd92ef-d8d1-4904-9f2a-9c372c1f2c86": {
+      "id": "7cdd92ef-d8d1-4904-9f2a-9c372c1f2c86",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "90d15172-2429-4e2a-b82b-2b033efd5b11": {
+      "id": "90d15172-2429-4e2a-b82b-2b033efd5b11",
+      "args": {
+        "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516"
+      }
+    },
+    "c52222c9-d839-4666-b442-09a10a74f984": {
+      "id": "c52222c9-d839-4666-b442-09a10a74f984",
+      "args": {
+        "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516"
+      }
+    },
+    "db79dd1c-beb2-4405-a521-f3b443560fc6": {
+      "id": "db79dd1c-beb2-4405-a521-f3b443560fc6",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "266fd7d1-6280-4ed3-a89d-a078f8f102fc": {
+      "id": "266fd7d1-6280-4ed3-a89d-a078f8f102fc",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "8ab4c278-c8ad-4d4f-96d3-75ddd786f3d1": {
+      "id": "8ab4c278-c8ad-4d4f-96d3-75ddd786f3d1",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "d762e553-5727-449a-b0e7-0c09595fdcab": {
+      "id": "d762e553-5727-449a-b0e7-0c09595fdcab",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "4609a991-2892-4b07-95c4-cc63a0e1da92": {
+      "id": "4609a991-2892-4b07-95c4-cc63a0e1da92",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "ac82102b-1de1-45e0-a106-c9c993826360": {
+      "id": "ac82102b-1de1-45e0-a106-c9c993826360",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    }
+  },
+  "symbol": "actor_5",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "6"
+          }
+        }
+      },
+      "id": "0de41e57-5a0d-414d-babc-79e9e8c4ca27"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 9,
+  "y": 8,
+  "_index": 5
+}

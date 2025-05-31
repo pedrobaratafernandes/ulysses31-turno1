@@ -33,23 +33,23 @@
     },
     {
       "id": "6",
-      "name": "alavancaVermelha",
-      "symbol": "var_alavancavermelha"
+      "name": "alavanca1",
+      "symbol": "var_alavanca1"
     },
     {
       "id": "7",
-      "name": "alavancaAmarela",
-      "symbol": "var_alavancaamarela"
+      "name": "alavanca2",
+      "symbol": "var_alavanca2"
     },
     {
       "id": "8",
-      "name": "alavancaVerde",
-      "symbol": "var_alavancaverde"
+      "name": "alavanca3",
+      "symbol": "var_alavanca3"
     },
     {
       "id": "9",
-      "name": "alavancaAzul",
-      "symbol": "var_alavancaazul"
+      "name": "alavanca4",
+      "symbol": "var_alavanca4"
     },
     {
       "id": "c70a935f-ed10-4843-bd47-ece80704ea8d__L0",

@@ -1,0 +1,19 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "9ce07d2a-72f7-4a28-936d-79c9ddaad204",
+  "name": "Porta 3/Começa Aberta",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "f020b9c9-8d2d-470a-bb0a-04fd9c8232a9",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

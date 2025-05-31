@@ -1,0 +1,19 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "713fdb74-3ef3-4b22-aa70-f276c2a479d9",
+  "name": "Porta 3/Começa Fechada",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "f020b9c9-8d2d-470a-bb0a-04fd9c8232a9",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "",
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

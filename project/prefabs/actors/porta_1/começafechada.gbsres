@@ -1,0 +1,117 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "105ca7f8-012a-4a0a-8a46-c6217bae95e2",
+  "name": "Porta 1/ComeçaFechada",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "d116d49e-f7a7-4c75-a1db-a1eb80f6c2f1",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "id": "11376223-d1e3-4c7e-ad55-a5a8a3fbe6ed",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Porta Vermelha/ ComeçaFechada",
+        "__collapse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "6"
+              },
+              "__collapseElse": false,
+              "__collapse": true,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "593dd0f3-4627-4d05-bba0-47f0321d2b52",
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__label": "portaAparece",
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "58d04860-372b-43a3-9040-244467f8e2fa",
+                        "children": {}
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SHOW",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "2289c4d8-bea3-4223-8542-af42538770b2",
+                        "children": {}
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "cadfb6ef-cca2-4c5c-88b9-57d945927cb9",
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": true,
+                    "__label": "portaDesaparece"
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "79d2d87e-d3d6-4723-8aa6-63f48915a4a1",
+                        "children": {}
+                      },
+                      {
+                        "command": "EVENT_ACTOR_HIDE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "db59703d-7d7b-4164-b6a9-45baee4e7185",
+                        "children": {}
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "id": "167ccb6f-5340-4c05-bc43-9ed98b80ef42"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "A porta começa fechada\nSe a variavel for true a porta aparece\nSe for false desaparece",
+              "__collapse": false
+            },
+            "id": "417591e2-c6b9-433a-98c1-46bbaa40258b"
+          }
+        ]
+      }
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

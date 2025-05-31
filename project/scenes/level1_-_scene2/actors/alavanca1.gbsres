@@ -1,0 +1,115 @@
+{
+  "_resourceType": "actor",
+  "id": "ea94eae5-61d4-4104-bc3d-4309b7d3ee88",
+  "name": "Alavanca1",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "prefabId": "d5eb6c1f-064b-4f61-89eb-bc21faf08666",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {
+    "5450a081-9070-4f09-8be8-96589c0bf08f": {
+      "id": "5450a081-9070-4f09-8be8-96589c0bf08f",
+      "args": {
+        "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516"
+      }
+    },
+    "ca020055-b4bc-4bf5-9cca-ac40549526c5": {
+      "id": "ca020055-b4bc-4bf5-9cca-ac40549526c5",
+      "args": {
+        "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516"
+      }
+    },
+    "3be37545-41f5-498e-ac43-1f450127af96": {
+      "id": "3be37545-41f5-498e-ac43-1f450127af96",
+      "args": {
+        "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516"
+      }
+    },
+    "08e80e4b-f60a-499f-9754-f349329f8ca5": {
+      "id": "08e80e4b-f60a-499f-9754-f349329f8ca5",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "2a5c8e40-16f0-4fe3-9010-2a7fa77530db": {
+      "id": "2a5c8e40-16f0-4fe3-9010-2a7fa77530db",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "5fc411a5-2f5b-4923-a20e-99c72ea4e7d7": {
+      "id": "5fc411a5-2f5b-4923-a20e-99c72ea4e7d7",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "200eb43b-4b1a-4e50-8322-0f72bb6e3ecd": {
+      "id": "200eb43b-4b1a-4e50-8322-0f72bb6e3ecd",
+      "args": {
+        "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454"
+      }
+    },
+    "9adac5d5-bdbc-4fb4-b962-c09c07da5a96": {
+      "id": "9adac5d5-bdbc-4fb4-b962-c09c07da5a96",
+      "args": {
+        "actorId": "70068624-47f5-4ff5-b5c4-36eabf4afdf4"
+      }
+    },
+    "a753ed7d-0c1d-45ad-bfc2-286f5b7ad218": {
+      "id": "a753ed7d-0c1d-45ad-bfc2-286f5b7ad218",
+      "args": {
+        "actorId": "70068624-47f5-4ff5-b5c4-36eabf4afdf4"
+      }
+    },
+    "8d3bed45-f514-4a86-a758-6e13dda874b8": {
+      "id": "8d3bed45-f514-4a86-a758-6e13dda874b8",
+      "args": {
+        "__collapseElse": false
+      }
+    },
+    "4ee78cb2-bc53-437f-bfcc-2301da086d24": {
+      "id": "4ee78cb2-bc53-437f-bfcc-2301da086d24",
+      "args": {
+        "actorId": "70068624-47f5-4ff5-b5c4-36eabf4afdf4"
+      }
+    },
+    "352ecff5-c6bb-4abb-a2a8-4eb6f3f4ae3e": {
+      "id": "352ecff5-c6bb-4abb-a2a8-4eb6f3f4ae3e",
+      "args": {
+        "actorId": "70068624-47f5-4ff5-b5c4-36eabf4afdf4"
+      }
+    }
+  },
+  "symbol": "actor_20",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "6"
+          }
+        }
+      },
+      "id": "4a48a736-c528-44eb-b0ef-8c3c8cc39988"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 11,
+  "y": 4,
+  "_index": 4
+}

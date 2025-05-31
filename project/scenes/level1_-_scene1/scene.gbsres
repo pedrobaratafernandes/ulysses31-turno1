@@ -13,10 +13,700 @@
   "collisions": "0f17+00f+0f!004+0f2+00f+0f!004+0f2+00f+0f!004+0f2+00f+0f!004+0f2+004+0f8+002+0f2+004+0f2+004+0f!002+0f!002+0f!004+0f!004+0f2+007+0f!007+0f!004+0f2+007+0f!007+0f!004+0f2+004+0f!002+0f!002+0f!004+0f!004+0f2+004+0f7+00a+0f!004+0f!002+0f!002+0f!00a+0f!007+0f!007+0f!004+0f2+007+0f!007+0f!004+0f2+004+0f!002+0f!002+0f!004+0f!004+0f2+004+0fc+004+0f2+004+0f!00f+0f2+004+0f!00f+0f2+004+0f!00f+0f2+004+0f!00f+0f13+002+0f2+",
   "autoFadeSpeed": 1,
   "symbol": "scene_8",
-  "x": 696,
+  "x": 688,
   "y": 792,
-  "script": [],
+  "script": [
+    {
+      "id": "8b342819-946a-4e2b-a621-4df69ae5ac16",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": true,
+        "__label": "inicializacaoDeAlavancas"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "480cb509-c11b-4a96-a4b8-b44ec2e2e35b"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "7",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": false
+            },
+            "id": "3fd4ec52-4b2e-44c2-975c-e4ed487e8626"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "8",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": false
+            },
+            "id": "343a14a9-3966-409e-8488-2c38044a0285"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": false
+            },
+            "id": "c9ada07e-729c-42ae-8b4c-fb704f096857"
+          }
+        ]
+      }
+    },
+    {
+      "id": "1348e78d-42e5-4480-9ccc-2eee821212fb",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Portas1",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "05c1735f-d066-4d95-8226-f446b0e9940f",
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Porta Vermelha/ ComeçaAberta",
+              "__collapse": false,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "variable",
+                      "value": "6"
+                    },
+                    "__collapseElse": false,
+                    "__collapse": false,
+                    "__disableElse": false,
+                    "__comment": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "30bf1e1d-8170-4fbe-a899-3f54c71d1b1a",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__collapse": true,
+                          "__label": "portaDesaparece"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                              "args": {
+                                "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516",
+                                "__collapse": true
+                              },
+                              "id": "cda6c6ae-1755-435b-89ac-1fb693111695",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_HIDE",
+                              "args": {
+                                "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516",
+                                "__collapse": false
+                              },
+                              "id": "265103bb-072e-42ef-bce2-809a29b7a788",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "3322670d-f110-423d-8729-14baa37a6e0a",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__collapse": false,
+                          "__label": "portaDesaparece"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                              "args": {
+                                "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454",
+                                "__collapse": true
+                              },
+                              "id": "ad2e7217-7095-4649-aba5-ea276429fae5",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_HIDE",
+                              "args": {
+                                "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454",
+                                "__collapse": true
+                              },
+                              "id": "201ac2e8-d02d-42bc-a127-32f933224876",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "8a1b7d07-4e04-43d3-a376-a7fd68f89344",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "portaAparece",
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                              "args": {
+                                "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516",
+                                "__collapse": true
+                              },
+                              "id": "b0fb9a19-2860-4e38-975e-419cbbcb4fbb",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SHOW",
+                              "args": {
+                                "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516",
+                                "__collapse": true
+                              },
+                              "id": "b65447ff-ea4b-4fa1-be58-4674b809aef5",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "9142feb1-3c13-4b28-84a3-cc3358abefb0",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "portaAparece",
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                              "args": {
+                                "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454",
+                                "__collapse": true
+                              },
+                              "id": "095cf4f6-5806-4f2d-9c43-90b9392d413c",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SHOW",
+                              "args": {
+                                "actorId": "9c6786b9-831c-48f7-8bb0-59434fef2454",
+                                "__collapse": false
+                              },
+                              "id": "91fb0d60-32ca-452a-b4fd-5b6793c7de29",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "id": "013ab20e-776d-4d44-9af0-5579fa257a36"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "Mexe Com a primeira porta Vermelha aberta",
+                    "__collapse": true
+                  },
+                  "id": "4166042c-bc5b-42e0-8d76-788b318c0d80"
+                }
+              ]
+            }
+          },
+          {
+            "id": "86709a23-9e65-418c-8ce5-3f3c0f1549f8",
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Porta Vermelha/ ComeçaFechada",
+              "__collapse": true,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "variable",
+                      "value": "6"
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false,
+                    "__comment": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "3a90eca7-bdb7-4319-b001-8c7103011e53",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "portaAparece",
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                              "args": {
+                                "actorId": "d4f82167-2d2f-44a5-85b0-6d970227f68f",
+                                "__collapse": true
+                              },
+                              "id": "e7724a26-3e90-4c71-8335-f12c0474249b",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SHOW",
+                              "args": {
+                                "actorId": "d4f82167-2d2f-44a5-85b0-6d970227f68f",
+                                "__collapse": true
+                              },
+                              "id": "0b7a9447-4350-4fa3-a9c0-679f3afb4bf3",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "138f6f46-52a0-4666-bf6d-349ba3b459f9",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__collapse": true,
+                          "__label": "portaDesaparece"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                              "args": {
+                                "actorId": "d4f82167-2d2f-44a5-85b0-6d970227f68f"
+                              },
+                              "id": "d3a8ef5d-ac07-4021-92c9-eee2c303b6e4",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_HIDE",
+                              "args": {
+                                "actorId": "d4f82167-2d2f-44a5-85b0-6d970227f68f"
+                              },
+                              "id": "eaf02c96-82b7-4243-a148-93df44781af4",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "id": "2fcf5595-d55f-448e-bafe-487f14e34be2"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "Mexe com a primeira porta vermelha fechada",
+                    "__collapse": false
+                  },
+                  "id": "54123c9d-2d25-4d61-b468-1043a366d4e7"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "379d9ecf-e386-41c7-9e63-7f84570481c1",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Portas2",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "005ec156-d090-4e8d-a363-380d2e99e5f5",
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Porta Amarela/ComeçaAberta",
+              "__collapse": false,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "variable",
+                      "value": "7"
+                    },
+                    "__collapseElse": false,
+                    "__collapse": true,
+                    "__comment": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "dfd80f3c-1926-415b-8415-2febf6b98eb2",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__collapse": false,
+                          "__label": "portaDesaparece"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                              "args": {
+                                "actorId": "f754d6b6-5b78-44c3-93e4-7b5d741739b4",
+                                "__collapse": false
+                              },
+                              "id": "89d357d1-84fa-407b-8073-762d47911de2",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_HIDE",
+                              "args": {
+                                "actorId": "f754d6b6-5b78-44c3-93e4-7b5d741739b4",
+                                "__collapse": true
+                              },
+                              "id": "509c0447-bb13-47a9-b955-bfe235089fdd",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "7959dbc1-a82d-4502-8ae4-4ae65ca92e3f",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "portaAparece",
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                              "args": {
+                                "actorId": "f754d6b6-5b78-44c3-93e4-7b5d741739b4",
+                                "__collapse": true
+                              },
+                              "id": "e7da0953-2f89-4062-b7f8-21657544bcdf",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SHOW",
+                              "args": {
+                                "actorId": "f754d6b6-5b78-44c3-93e4-7b5d741739b4",
+                                "__collapse": true
+                              },
+                              "id": "cbeaaf43-c899-4d86-9f29-fe2ab1bf18ef",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "id": "e31ac6c0-8e7a-409e-b7f0-f44e28fab0fc"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "Mexe com a primeira porta amarela aberta",
+                    "__collapse": false
+                  },
+                  "id": "4c2289c9-f8c6-4d83-94ce-88e81757e1a9"
+                }
+              ]
+            }
+          },
+          {
+            "id": "d39de891-6a48-4e91-b033-ce0f5b62aeb0",
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Porta Amarela/ComeçaFechada",
+              "__collapse": true,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "variable",
+                      "value": "7"
+                    },
+                    "__collapseElse": false,
+                    "__collapse": false,
+                    "__comment": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "08500a0a-3561-4c38-9bb3-c9e7954c3e3f",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "portaAparece",
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                              "args": {
+                                "actorId": "bc736d9c-d9ba-4dd6-97a9-0621464fd266",
+                                "__collapse": true
+                              },
+                              "id": "035ecb41-fbdc-49a5-bc02-01c3707f9b46",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SHOW",
+                              "args": {
+                                "actorId": "bc736d9c-d9ba-4dd6-97a9-0621464fd266",
+                                "__collapse": true
+                              },
+                              "id": "2dac41dd-caef-4683-940c-7af9238692b6",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "854d22bb-44ec-445b-87be-436076abd2e4",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__collapse": true,
+                          "__label": "portaDesaparece"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                              "args": {
+                                "actorId": "bc736d9c-d9ba-4dd6-97a9-0621464fd266",
+                                "__collapse": true
+                              },
+                              "id": "48677bfb-8607-4a48-a658-b35b93f618fa",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_HIDE",
+                              "args": {
+                                "actorId": "bc736d9c-d9ba-4dd6-97a9-0621464fd266",
+                                "__collapse": true
+                              },
+                              "id": "96e8fb48-476b-4068-9583-0a171e610851",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "id": "918268d6-852c-4246-958d-34196d6f78b6"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "Mexe com a primeira porta amarela fechada",
+                    "__collapse": true
+                  },
+                  "id": "e73422dd-2c54-4cc9-a221-fb005aab271e"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "2261b038-3c1f-4154-864c-61aaac225635",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Portas3",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "ee1f801d-bbea-4d37-a5e6-45acbd09ddc8",
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Porta3/ ComeçaAberta",
+              "__collapse": true,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "variable",
+                      "value": "8"
+                    },
+                    "__collapseElse": false,
+                    "__collapse": true,
+                    "__disableElse": false,
+                    "__comment": false
+                  },
+                  "children": {
+                    "true": [],
+                    "false": []
+                  },
+                  "id": "4902e962-a371-490d-acc5-0ca2e359de0c"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "Mexe Com a primeira porta Vermelha aberta",
+                    "__collapse": true
+                  },
+                  "id": "89c80345-16e7-40b6-b72f-f3d72bf031ec"
+                }
+              ]
+            }
+          },
+          {
+            "id": "091d13f7-33ac-4c95-8a2d-d53c3ff58f93",
+            "command": "EVENT_GROUP",
+            "args": {
+              "__label": "Porta 3/ ComeçaFechada",
+              "__collapse": true,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "variable",
+                      "value": "8"
+                    },
+                    "__collapseElse": false,
+                    "__collapse": false,
+                    "__comment": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "0a92f3f5-bcb7-4c7c-8325-75222e5b8890",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "portaAparece",
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+                              "args": {
+                                "actorId": "7b2b1778-b6a8-4b52-af85-f3306d5ad11f",
+                                "__collapse": true
+                              },
+                              "id": "d5627c3e-561d-4d9d-b580-4680b2068035",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SHOW",
+                              "args": {
+                                "actorId": "7b2b1778-b6a8-4b52-af85-f3306d5ad11f",
+                                "__collapse": true
+                              },
+                              "id": "7b7d7ce1-0325-47fc-9071-7b8a9519914d",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "da668218-e39a-4c0b-a714-2f129d49b11c",
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__collapse": true,
+                          "__label": "portaDesaparece"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+                              "args": {
+                                "actorId": "7b2b1778-b6a8-4b52-af85-f3306d5ad11f"
+                              },
+                              "id": "f8f17428-abf0-4eed-b298-21d2f966a37d",
+                              "children": {}
+                            },
+                            {
+                              "command": "EVENT_ACTOR_HIDE",
+                              "args": {
+                                "actorId": "7b2b1778-b6a8-4b52-af85-f3306d5ad11f"
+                              },
+                              "id": "5dca7f3f-d4c9-4b17-bb5a-5cff828c554a",
+                              "children": {}
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "id": "378aa4dd-6fcf-4117-ab96-1499d8a2357d"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "Mexe com a primeira porta vermelha fechada",
+                    "__collapse": false
+                  },
+                  "id": "5a595508-e770-4d63-a8a6-82f102a8e917"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true
 }
