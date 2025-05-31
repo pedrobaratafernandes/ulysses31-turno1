@@ -26,7 +26,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -86,7 +86,7 @@
         "override": true,
         "__scriptTabs": "press",
         "__comment": false,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -843,7 +843,7 @@
                   "command": "EVENT_LAUNCH_PROJECTILE",
                   "args": {
                     "__section": "projectile",
-                    "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+                    "spriteSheetId": "f409931a-9a20-493c-bfe9-2cd28bef6413",
                     "spriteStateId": "",
                     "actorId": "player",
                     "x": 0,
