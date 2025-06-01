@@ -26,7 +26,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -43,7 +43,8 @@
                   "type": "false"
                 }
               },
-              "__collapseElse": false
+              "__collapseElse": true,
+              "__collapse": true
             },
             "children": {
               "true": [
@@ -86,7 +87,7 @@
         "override": true,
         "__scriptTabs": "press",
         "__comment": false,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -104,7 +105,7 @@
                 }
               },
               "__collapseElse": false,
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "true": [

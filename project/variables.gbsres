@@ -60,6 +60,11 @@
       "id": "16177b60-ed2c-4df1-8a72-d59c890dbc69__L0",
       "name": "tirarVida",
       "symbol": "var_tirarvida"
+    },
+    {
+      "id": "10",
+      "name": "PlayerY",
+      "symbol": "var_playery"
     }
   ]
 }

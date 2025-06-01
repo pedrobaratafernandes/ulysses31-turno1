@@ -1,10 +1,10 @@
 {
   "_resourceType": "actor",
-  "id": "30884f2b-c551-4f86-96e1-78a48ac1d06e",
-  "name": "porta1/cf",
+  "id": "e8a45eb0-20e7-4c29-a3e7-94c2bc56c4b0",
+  "name": "porta2/cf",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "66103a41-4c0e-4765-a485-be1fa5fd2f91",
+  "spriteSheetId": "a4bb22d6-cd5e-456b-baef-9bd91fd041cc",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -14,14 +14,14 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_37",
+  "symbol": "actor_45",
   "script": [],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 25,
-  "y": 5,
-  "_index": 4
+  "x": 7,
+  "y": 11,
+  "_index": 3
 }
