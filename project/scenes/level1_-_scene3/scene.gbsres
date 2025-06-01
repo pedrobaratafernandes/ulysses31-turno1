@@ -14,7 +14,7 @@
   "autoFadeSpeed": 1,
   "symbol": "scene_10",
   "x": 840,
-  "y": 568,
+  "y": 584,
   "script": [
     {
       "command": "EVENT_SET_VALUE",

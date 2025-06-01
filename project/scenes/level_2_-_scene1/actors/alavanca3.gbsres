@@ -37,7 +37,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Porta Amarela/ComeçaAberta",
-        "__collapse": true,
+        "__collapse": false,
         "__comment": false
       },
       "children": {
@@ -139,7 +139,7 @@
                         "command": "EVENT_ACTOR_SHOW",
                         "args": {
                           "actorId": "5134978a-ef74-4175-a10f-ba6e9a6f83fd",
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "id": "77d9ced2-f410-4eae-995d-e33f3fb2a13a",
                         "children": {}
@@ -198,7 +198,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Porta Amarela/ComeçaFechada",
-        "__collapse": true,
+        "__collapse": false,
         "__comment": false
       },
       "children": {
@@ -221,7 +221,7 @@
                   "command": "EVENT_GROUP",
                   "args": {
                     "__label": "portaAparece",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -252,7 +252,7 @@
                   "id": "d3109752-0ed2-4c9b-9cdf-8f87b54ebc51",
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": true,
+                    "__collapse": false,
                     "__label": "portaDesaparece"
                   },
                   "children": {
@@ -270,7 +270,7 @@
                         "command": "EVENT_ACTOR_HIDE",
                         "args": {
                           "actorId": "cf34a517-a6ae-4693-8284-390bbdae9256",
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "id": "4f9d0cd9-4c15-48e4-b370-85466ed5c255",
                         "children": {}

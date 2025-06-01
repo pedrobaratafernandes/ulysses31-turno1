@@ -235,7 +235,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Portas2",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -244,7 +244,7 @@
             "command": "EVENT_GROUP",
             "args": {
               "__label": "Porta Amarela/ComeçaAberta",
-              "__collapse": false,
+              "__collapse": true,
               "__comment": false
             },
             "children": {

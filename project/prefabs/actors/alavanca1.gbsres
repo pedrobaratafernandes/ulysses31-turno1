@@ -296,8 +296,8 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Porta Vermelha/ ComeçaAberta",
-        "__collapse": false,
-        "__comment": false
+        "__collapse": true,
+        "__comment": true
       },
       "children": {
         "true": [
@@ -458,7 +458,7 @@
       "args": {
         "__label": "Porta Vermelha/ ComeçaFechada",
         "__collapse": true,
-        "__comment": false
+        "__comment": true
       },
       "children": {
         "true": [
