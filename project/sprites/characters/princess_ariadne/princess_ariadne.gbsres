@@ -1,0 +1,101 @@
+{
+  "_resourceType": "sprite",
+  "id": "dabde1ec-920b-4adf-9f4f-7169ae9a3417",
+  "name": "Characters/Princess_Ariadne/Princess_Ariadne",
+  "symbol": "sprite_characters_princess_",
+  "numFrames": 4,
+  "filename": "Characters/Princess_Ariadne/Princess_Ariadne.png",
+  "checksum": "3d2948ae3d6a05ae385c61b4e5b7405046001625",
+  "width": 64,
+  "height": 48,
+  "states": [
+    {
+      "id": "41fd1804-1df3-45b9-915d-1c3101e47368",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "f2d3f188-7bc4-434a-9301-c2a7826e53d8",
+          "frames": [
+            {
+              "id": "795ea855-a357-4a88-9bb9-0d0e3e2a9eab",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "1f74aefe-1e8a-4157-aa94-a5fe6f6e9a7f",
+          "frames": [
+            {
+              "id": "3ea52007-1c6c-4552-ba5d-e5845df64e7b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "6074e942-b831-4c9d-9d71-abc40e07abd8",
+          "frames": [
+            {
+              "id": "de3690bd-8d35-4dfb-affb-2673101037c1",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "6b70cdf5-fa9b-428d-a0d3-9bdd06314fec",
+          "frames": [
+            {
+              "id": "406dd292-ad07-4b3b-91fe-ff9ef08c363e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "6d0daddc-a5ae-483e-bb5a-cd4efe554229",
+          "frames": [
+            {
+              "id": "aa75ce44-9408-422c-8406-2bfc6d7d8766",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "413e80ce-1ad2-4d12-8737-bafd067e7477",
+          "frames": [
+            {
+              "id": "be2e172f-69d5-4564-b8e2-e7abd55885bc",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7eb756c5-0710-4fbe-99c6-e2ade698d6fe",
+          "frames": [
+            {
+              "id": "f5a7f769-d55f-4e2b-9981-01f9d7ba251e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "3897acf7-4bc7-4a66-a5f9-4340c2f3465d",
+          "frames": [
+            {
+              "id": "f5feffeb-152d-4d7b-a9cc-6708840611b8",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15
+}
