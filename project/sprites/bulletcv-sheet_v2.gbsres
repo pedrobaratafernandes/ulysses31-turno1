@@ -23,8 +23,8 @@
               "tiles": [
                 {
                   "id": "495e6e82-4604-4d78-a2d2-51c0ac426809",
-                  "x": 3,
-                  "y": 0,
+                  "x": 5,
+                  "y": 5,
                   "sliceX": 96,
                   "sliceY": -8,
                   "palette": 0,
@@ -42,7 +42,7 @@
                 {
                   "id": "9ff75674-1ff9-4e69-84ab-f17269ba488f",
                   "x": 4,
-                  "y": 0,
+                  "y": 5,
                   "sliceX": 104,
                   "sliceY": -8,
                   "palette": 0,
@@ -60,7 +60,7 @@
                 {
                   "id": "f05f4612-dbb7-49cb-8698-8e2aa213f5cf",
                   "x": 4,
-                  "y": 0,
+                  "y": 5,
                   "sliceX": 112,
                   "sliceY": -8,
                   "palette": 0,
@@ -77,8 +77,8 @@
               "tiles": [
                 {
                   "id": "db2c56d2-55ee-4c42-9148-c14f55c8317a",
-                  "x": 3,
-                  "y": 0,
+                  "x": 4,
+                  "y": 5,
                   "sliceX": 120,
                   "sliceY": -8,
                   "palette": 0,
@@ -95,26 +95,8 @@
               "tiles": [
                 {
                   "id": "472e08bb-e2fa-494f-be43-f6208c63b501",
-                  "x": 3,
-                  "y": 0,
-                  "sliceX": 136,
-                  "sliceY": -8,
-                  "palette": 0,
-                  "flipX": false,
-                  "flipY": false,
-                  "objPalette": "OBP0",
-                  "paletteIndex": 0,
-                  "priority": false
-                }
-              ]
-            },
-            {
-              "id": "01fb63b5-a284-4727-a952-68697ad6669c",
-              "tiles": [
-                {
-                  "id": "4426118d-ad01-46f3-8bb9-f69407727edb",
                   "x": 4,
-                  "y": 0,
+                  "y": 5,
                   "sliceX": 136,
                   "sliceY": -8,
                   "palette": 0,
@@ -132,7 +114,7 @@
                 {
                   "id": "96f6ebd7-8143-4d11-b29c-7dc4f1e54913",
                   "x": 4,
-                  "y": 0,
+                  "y": 5,
                   "sliceX": 144,
                   "sliceY": -8,
                   "palette": 0,

@@ -4,9 +4,10 @@
   "name": "Level2_Scene1",
   "symbol": "bg_level2_scene1",
   "width": 20,
-  "height": 20,
+  "height": 18,
   "imageWidth": 160,
-  "imageHeight": 160,
+  "imageHeight": 144,
   "filename": "Level2_Scene1.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

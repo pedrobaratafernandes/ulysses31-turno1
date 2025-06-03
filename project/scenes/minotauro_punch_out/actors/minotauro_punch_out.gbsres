@@ -4,7 +4,7 @@
   "name": "Minotauro Punch Out",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "daf95270-e30d-423b-9ee7-990ae29f57f6",
+  "spriteSheetId": "e47a004d-0022-4c9e-9d60-dcbc0a87cb6a",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -16,6 +16,19 @@
   "prefabScriptOverrides": {},
   "symbol": "actor_2",
   "script": [
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "vertical",
+        "magnitude": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "23a95de4-3378-492a-a001-5839e18dd774"
+    },
     {
       "command": "EVENT_DEC_VALUE",
       "args": {
@@ -52,32 +65,13 @@
         "value": {
           "type": "number",
           "value": 3
-        }
+        },
+        "__collapse": true
       },
       "id": "647131a5-3982-4f17-8c69-df1b884b3a4c"
     }
   ],
   "updateScript": [
-    {
-      "command": "EVENT_COMMENT",
-      "args": {
-        "text": "vida 3 minotauro",
-        "__collapse": true
-      },
-      "id": "7e9b1fa4-3e2f-41cf-8513-95a6f2b8c20a"
-    },
-    {
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "1",
-        "value": {
-          "type": "number",
-          "value": 3
-        },
-        "__collapse": true
-      },
-      "id": "a9a2798b-5afb-433d-93e8-fb99d8b499c2"
-    },
     {
       "command": "EVENT_COMMENT",
       "args": {

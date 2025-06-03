@@ -7,7 +7,7 @@
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "LOGO",
+  "type": "TOPDOWN",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
@@ -16,11 +16,6 @@
   "x": 896,
   "y": 30,
   "script": [
-    {
-      "command": "EVENT_MUSIC_STOP",
-      "args": {},
-      "id": "c0725f6c-5816-4111-a6d3-0bafb6be0834"
-    },
     {
       "command": "EVENT_IF_INPUT",
       "args": {
@@ -59,16 +54,10 @@
         "false": []
       },
       "id": "bf919957-ad9f-46db-a95e-b3f742ede1cb"
-    },
-    {
-      "command": "EVENT_MUSIC_PLAY",
-      "args": {
-        "musicId": "f50428ab-a084-4591-9bba-2ba10fe7b1c6"
-      },
-      "id": "c53f9701-fb46-43fb-85c6-00dcec2e25cf"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "42899cea-4627-4ca1-82ba-c6a5754d4909"
 }

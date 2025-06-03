@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "dfe34429-7624-4b72-9761-b4f55d5026fd",
+  "name": "UI/Start_ScreenV2",
+  "symbol": "bg_ui_start_screenv2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "UI/Start_ScreenV2.png",
+  "tileColors": ""
+}

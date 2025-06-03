@@ -26,7 +26,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -43,8 +43,8 @@
                   "type": "false"
                 }
               },
-              "__collapseElse": true,
-              "__collapse": true
+              "__collapseElse": false,
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -57,6 +57,14 @@
                     }
                   },
                   "id": "13990e23-151c-4b85-b242-9d9fcb1f4bd9"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "e318c13a-fb43-4385-a245-8148f00c07e6",
+                    "spriteSheetId": "16cf2754-1b9a-4a5b-8af3-ff2951f51aff"
+                  },
+                  "id": "fc44a89f-3639-4b73-a59f-96f68918bfc6"
                 }
               ],
               "false": [
@@ -69,6 +77,14 @@
                     }
                   },
                   "id": "5211781b-e4da-4adc-b788-436495644aea"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "e318c13a-fb43-4385-a245-8148f00c07e6",
+                    "spriteSheetId": "e00603c1-0029-4737-b731-4e388c2fffb0"
+                  },
+                  "id": "54faf192-8138-473c-a944-3bb34826c427"
                 }
               ]
             },
@@ -885,6 +901,117 @@
         ]
       },
       "id": "3d7e42b9-3001-4a26-b7fc-7f4b3f6c3406"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "Barra de energia do jogador"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 3
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "735e0652-59e4-431c-aa3d-0a8dcca7c366",
+                    "spriteStateId": "",
+                    "loopAnim": false
+                  },
+                  "id": "098c96f0-ef7c-4c47-8389-776829b453b0"
+                }
+              ],
+              "false": []
+            },
+            "id": "8f165467-e948-4309-802f-0987d544999d"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "735e0652-59e4-431c-aa3d-0a8dcca7c366",
+                    "spriteStateId": "vida2",
+                    "loopAnim": false
+                  },
+                  "id": "89896cfb-8322-4a12-965c-aceef6f0826f"
+                }
+              ],
+              "false": []
+            },
+            "id": "2429caff-27f5-4254-8427-9a3bc98d6428"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "735e0652-59e4-431c-aa3d-0a8dcca7c366",
+                    "spriteStateId": "vida1",
+                    "loopAnim": false
+                  },
+                  "id": "e962bb57-32b1-4dda-854a-70642924fbf4"
+                }
+              ],
+              "false": []
+            },
+            "id": "35f95a76-c9a7-466e-a442-438de48b8651"
+          }
+        ]
+      },
+      "id": "46821163-d638-4624-9212-763525a2f2b3"
     }
   ],
   "hit1Script": [],

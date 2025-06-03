@@ -20,7 +20,8 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__label": "Sistema de movimento tipo jogo punch out"
+        "__label": "Sistema de movimento tipo jogo punch out",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -655,6 +656,127 @@
         "false": []
       },
       "id": "50b97a3e-1368-4a6e-a3e3-e5e4aafcbc89"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "Barra de energia do jogador"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 3
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "735e0652-59e4-431c-aa3d-0a8dcca7c366",
+                    "spriteStateId": "",
+                    "loopAnim": false
+                  },
+                  "id": "788d0f05-58fc-4225-94b6-3c5d6695dea2"
+                }
+              ],
+              "false": []
+            },
+            "id": "bce7ac8b-d919-4b5e-84c5-4221f37c70ee"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "735e0652-59e4-431c-aa3d-0a8dcca7c366",
+                    "spriteStateId": "vida2",
+                    "loopAnim": false
+                  },
+                  "id": "e78edbf9-d1d6-4689-94fb-cc1c8d8e05b6"
+                }
+              ],
+              "false": []
+            },
+            "id": "0893e448-7e40-43e8-af72-7cb96773d76c"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "735e0652-59e4-431c-aa3d-0a8dcca7c366",
+                    "spriteStateId": "vida1",
+                    "loopAnim": false
+                  },
+                  "id": "1de3e146-9443-4e6a-9d03-10e3066adb1c"
+                }
+              ],
+              "false": []
+            },
+            "id": "16097c76-95e3-469f-a449-42b607e4ec9f"
+          }
+        ]
+      },
+      "id": "1761653c-4301-4acd-8316-164f5579bf9e"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "$01$",
+        "x": 1,
+        "y": 1,
+        "location": "background"
+      },
+      "id": "1c12f3aa-80db-4a54-9ce3-dd7fdffd27ee"
     }
   ],
   "hit1Script": [],
