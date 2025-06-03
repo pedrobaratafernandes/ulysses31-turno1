@@ -660,7 +660,7 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__collapse": false,
+        "__collapse": true,
         "__label": "Barra de energia do jogador"
       },
       "children": {
@@ -774,7 +774,8 @@
         "text": "$01$",
         "x": 1,
         "y": 1,
-        "location": "background"
+        "location": "background",
+        "__collapse": true
       },
       "id": "1c12f3aa-80db-4a54-9ce3-dd7fdffd27ee"
     }

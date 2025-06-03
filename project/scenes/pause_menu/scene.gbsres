@@ -40,9 +40,23 @@
                 "value": 6
               },
               "direction": "",
-              "fadeSpeed": "2"
+              "fadeSpeed": "2",
+              "__collapse": true
             },
             "id": "b34fd66b-28b4-46f0-b545-7960bb28af02"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "f8b9ef94-ac1e-4ab3-b85d-5b73644077f0",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "ec1a480d-2a08-46cc-b62d-c60cb1883bab"
           }
         ]
       },
@@ -56,7 +70,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [

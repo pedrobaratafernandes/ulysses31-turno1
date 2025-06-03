@@ -1245,6 +1245,20 @@
                     "__comment": false
                   },
                   "id": "cc8dd83c-f326-4eaf-b2a6-27e2bd7c1b83"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "27229269-c93d-4eed-9dba-ab5bcdfced41",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0,
+                    "__collapse": true
+                  },
+                  "id": "a633cb48-e955-433e-9926-60eeaa9c14bc"
                 }
               ]
             },
@@ -1289,6 +1303,19 @@
               "__collapse": false
             },
             "id": "c7e0c412-9680-4bfe-92b5-6c6eb88fea7a"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "b3695359-144e-4837-92f7-8af9c410a746",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "5dc5a9e6-5473-4aad-89de-6a78b9ac9e27"
           }
         ]
       },

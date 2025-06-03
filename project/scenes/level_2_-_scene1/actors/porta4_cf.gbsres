@@ -17,7 +17,21 @@
   "symbol": "actor_55",
   "script": [],
   "startScript": [],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "beep",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "7d7525ef-af5f-47d2-b8ed-4a60a2e0b6b3"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],

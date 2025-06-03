@@ -235,7 +235,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Portas2",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -1772,6 +1772,20 @@
                     "__comment": false
                   },
                   "id": "5568d4ec-233e-47bf-9e48-9201ab87af76"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "27229269-c93d-4eed-9dba-ab5bcdfced41",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0,
+                    "__collapse": true
+                  },
+                  "id": "9bf52948-f72a-4fd2-9907-7107149b751b"
                 }
               ]
             },
@@ -1788,7 +1802,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -1816,6 +1830,20 @@
               "__collapse": false
             },
             "id": "27c8fe2a-b4e3-45f4-911c-a50c8b4bb8d3"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "b3695359-144e-4837-92f7-8af9c410a746",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0,
+              "__collapse": true
+            },
+            "id": "f1904705-4fa3-4c54-98e9-c0eb0a97e2ef"
           }
         ]
       },

@@ -140,7 +140,7 @@
       "command": "EVENT_COMMENT",
       "args": {
         "text": "Codigo de ataque do minotauro 0 é placagem, 1 é o tridente",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "bb71af05-18a5-4eaf-8320-7069d9ef1d87"
     },
@@ -246,7 +246,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": true,
+        "__collapse": false,
         "__comment": false
       },
       "children": {
