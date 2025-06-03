@@ -3,17 +3,17 @@
   "id": "5f2ca1a4-8d9c-43da-aad0-3e172dd370db",
   "name": "Trident",
   "symbol": "sprite_trident",
-  "numFrames": 1,
+  "numFrames": 3,
   "filename": "Trident.png",
-  "checksum": "17317e37cc37fc668b021920e661c003dc76bf6e",
-  "width": 16,
+  "checksum": "c9754f7df1bcc3882d2380515e36e3b71b31f860",
+  "width": 48,
   "height": 16,
   "states": [
     {
       "id": "591c2238-67ed-4d11-a1e1-0988a24f32fe",
       "name": "",
-      "animationType": "fixed",
-      "flipLeft": false,
+      "animationType": "multi",
+      "flipLeft": true,
       "animations": [
         {
           "id": "81798dbc-5d00-4f22-a8c0-89a65b8a397b",
@@ -22,29 +22,29 @@
               "id": "f0706fbb-aaa4-4305-a8aa-8b42a03fb7c8",
               "tiles": [
                 {
-                  "id": "f3dc474d-1a72-41ae-97e6-10b31d33a1d9",
+                  "id": "e0c239d9-c8fb-4197-bdbf-37845a636478",
                   "x": 0,
                   "y": 0,
-                  "sliceX": 0,
+                  "sliceX": 32,
                   "sliceY": 0,
+                  "palette": 0,
                   "flipX": false,
                   "flipY": false,
-                  "palette": 0,
-                  "paletteIndex": 0,
                   "objPalette": "OBP0",
+                  "paletteIndex": 0,
                   "priority": false
                 },
                 {
-                  "id": "e6e19f94-33d1-4490-9748-98ba80749b2b",
+                  "id": "3905fb65-1812-489e-9895-6bb3a9e9afd9",
                   "x": 8,
                   "y": 0,
-                  "sliceX": 8,
+                  "sliceX": 40,
                   "sliceY": 0,
+                  "palette": 0,
                   "flipX": false,
                   "flipY": false,
-                  "palette": 0,
-                  "paletteIndex": 0,
                   "objPalette": "OBP0",
+                  "paletteIndex": 0,
                   "priority": false
                 }
               ]
@@ -65,7 +65,34 @@
           "frames": [
             {
               "id": "fb06a02d-5b4a-45d3-9517-180ca755ea66",
-              "tiles": []
+              "tiles": [
+                {
+                  "id": "7aeef51d-9577-4cfe-8e60-4c2bdf6de094",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                },
+                {
+                  "id": "f0740cce-c86a-4fb1-83db-33989a1656f2",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
             }
           ]
         },
@@ -74,7 +101,34 @@
           "frames": [
             {
               "id": "9e119b53-57f1-431e-a73c-cf7ffc4838e5",
-              "tiles": []
+              "tiles": [
+                {
+                  "id": "5235e3cc-5cd3-41b6-867e-9a0db8eed550",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                },
+                {
+                  "id": "00247a4d-2481-43df-ae9e-5bb7fe4a53f0",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 24,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
             }
           ]
         },
@@ -117,7 +171,7 @@
       ]
     }
   ],
-  "numTiles": 2,
+  "numTiles": 6,
   "canvasWidth": 16,
   "canvasHeight": 16,
   "boundsX": 0,
