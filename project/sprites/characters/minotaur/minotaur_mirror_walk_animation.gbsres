@@ -2,7 +2,7 @@
   "_resourceType": "sprite",
   "id": "bd41bb86-7004-493b-889e-3205bf919259",
   "name": "Characters/Minotaur/minotaur_mirror_walk_animation",
-  "symbol": "sprite_characters_minotaur__2",
+  "symbol": "sprite_characters_minotaur_",
   "numFrames": 8,
   "filename": "Characters/Minotaur/minotaur_mirror_walk_animation.png",
   "checksum": "487706f1b4b903993b59b9a019c21168ffb05df2",

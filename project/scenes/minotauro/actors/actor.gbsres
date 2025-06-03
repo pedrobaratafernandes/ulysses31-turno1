@@ -82,7 +82,7 @@
                   "command": "EVENT_ACTOR_SET_SPRITE",
                   "args": {
                     "actorId": "e318c13a-fb43-4385-a245-8148f00c07e6",
-                    "spriteSheetId": "e00603c1-0029-4737-b731-4e388c2fffb0"
+                    "spriteSheetId": "4e369e73-8683-477b-9395-5600bb14e5dd"
                   },
                   "id": "54faf192-8138-473c-a944-3bb34826c427"
                 }
