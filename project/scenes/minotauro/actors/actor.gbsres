@@ -126,6 +126,14 @@
             "children": {
               "true": [
                 {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "player",
+                    "spriteSheetId": "d2e3103f-9ca5-4b36-bbd3-c0c404a8602c"
+                  },
+                  "id": "1f0a4555-2a55-43c8-ad40-660715da220b"
+                },
+                {
                   "command": "EVENT_COMMENT",
                   "args": {
                     "text": "mostrar espada",
@@ -909,6 +917,13 @@
                     "false": []
                   },
                   "id": "fef75ea6-6a21-41a0-86ea-03cad1c27c43"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "51fa1960-e1f0-4f9e-b7b0-d0541dab3722"
+                  },
+                  "id": "a431f18c-c6de-451d-b400-27d5b78649af"
                 }
               ],
               "false": [
