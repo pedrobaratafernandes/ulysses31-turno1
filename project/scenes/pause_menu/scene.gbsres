@@ -7,7 +7,7 @@
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "type": "LOGO",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
@@ -23,10 +23,25 @@
           "right"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "1741849c-98ac-449a-aa1d-ae7ca55cb1b3",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0,
+              "__comment": false
+            },
+            "id": "ec1a480d-2a08-46cc-b62d-c60cb1883bab"
+          },
           {
             "command": "EVENT_SWITCH_SCENE",
             "args": {
@@ -44,19 +59,6 @@
               "__collapse": true
             },
             "id": "b34fd66b-28b4-46f0-b545-7960bb28af02"
-          },
-          {
-            "command": "EVENT_SOUND_PLAY_EFFECT",
-            "args": {
-              "type": "f8b9ef94-ac1e-4ab3-b85d-5b73644077f0",
-              "priority": "medium",
-              "pitch": 4,
-              "frequency": 200,
-              "duration": 0.5,
-              "wait": true,
-              "effect": 0
-            },
-            "id": "ec1a480d-2a08-46cc-b62d-c60cb1883bab"
           }
         ]
       },
@@ -74,6 +76,20 @@
       },
       "children": {
         "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "5edbc46d-120f-462a-ade5-84b166499dc8",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0,
+              "__collapse": false
+            },
+            "id": "69bb9961-4553-46a4-8364-9c5cd8af0b51"
+          },
           {
             "command": "EVENT_SCENE_POP_STATE",
             "args": {

@@ -7,7 +7,7 @@
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "type": "LOGO",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
@@ -16,6 +16,19 @@
   "x": 1064,
   "y": 30,
   "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "07c6f694-902d-4a95-a10e-3e54e5e17b8d",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "9db401af-379f-46f9-820f-ab90596daf09"
+    },
     {
       "command": "EVENT_IF_INPUT",
       "args": {
@@ -55,19 +68,6 @@
         "false": []
       },
       "id": "6540e4ec-08c2-4fcc-8c28-b82379405132"
-    },
-    {
-      "command": "EVENT_SOUND_PLAY_EFFECT",
-      "args": {
-        "type": "d084a7a9-fc29-48e2-beb4-bb87d7a34197",
-        "priority": "medium",
-        "pitch": 4,
-        "frequency": 200,
-        "duration": 0.5,
-        "wait": true,
-        "effect": 0
-      },
-      "id": "5fb470a6-40c8-4a19-81d6-dc622d20a27c"
     }
   ],
   "playerHit1Script": [],

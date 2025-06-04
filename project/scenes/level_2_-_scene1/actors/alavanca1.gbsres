@@ -17,6 +17,19 @@
   "symbol": "actor_36",
   "script": [
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "1741849c-98ac-449a-aa1d-ae7ca55cb1b3",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "c673a1bb-f0de-4324-bbe9-d7c34a33b49a"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "6",

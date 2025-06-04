@@ -17,6 +17,19 @@
   "symbol": "actor_19",
   "script": [
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "1741849c-98ac-449a-aa1d-ae7ca55cb1b3",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "8033d19d-a9f6-4669-badc-1a4e24af3a80"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "8",
@@ -27,7 +40,7 @@
             "value": "8"
           }
         },
-        "__collapse": false
+        "__collapse": true
       },
       "id": "471f2113-88f8-4311-b67f-b04b58bfb367",
       "children": {}
@@ -37,7 +50,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Porta Vermelha/ ComeçaAberta",
-        "__collapse": false,
+        "__collapse": true,
         "__comment": false
       },
       "children": {
@@ -136,7 +149,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Porta Vermelha/ ComeçaFechada",
-        "__collapse": false,
+        "__collapse": true,
         "__comment": false
       },
       "children": {

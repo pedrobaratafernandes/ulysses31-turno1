@@ -17,6 +17,19 @@
   "symbol": "actor_47",
   "script": [
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "1741849c-98ac-449a-aa1d-ae7ca55cb1b3",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "534e9b97-ce9c-409b-8013-c25ba37ae855"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "9",

@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "793c66f2-5b56-4782-a172-c40ca4160dfe",
+  "name": "Death.vgm",
+  "symbol": "sound_death_vgm",
+  "filename": "Death.vgm",
+  "type": "vgm"
+}

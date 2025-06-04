@@ -7,7 +7,7 @@
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "TOPDOWN",
+  "type": "LOGO",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
@@ -16,6 +16,20 @@
   "x": 896,
   "y": 30,
   "script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "c024587e-e04d-42ee-b079-4b845981ab51",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0,
+        "__comment": false
+      },
+      "id": "12b58c2d-5859-481a-80e2-9bfe59b1ce0f"
+    },
     {
       "command": "EVENT_IF_INPUT",
       "args": {
@@ -49,19 +63,6 @@
               "fadeSpeed": "2"
             },
             "id": "6c9aad65-ba27-4712-a2dc-2b27b52df73a"
-          },
-          {
-            "command": "EVENT_SOUND_PLAY_EFFECT",
-            "args": {
-              "type": "ff9b8f57-ce33-4825-9546-c80d32dac10f",
-              "priority": "medium",
-              "pitch": 4,
-              "frequency": 200,
-              "duration": 0.5,
-              "wait": true,
-              "effect": 0
-            },
-            "id": "12b58c2d-5859-481a-80e2-9bfe59b1ce0f"
           }
         ],
         "false": []

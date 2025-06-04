@@ -79,6 +79,19 @@
               "__comment": false
             },
             "id": "6745f531-b244-440c-a154-70056827d214"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "793c66f2-5b56-4782-a172-c40ca4160dfe",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "346facc9-3e8c-409f-a075-fe306f2e1196"
           }
         ]
       },
@@ -140,7 +153,7 @@
       "command": "EVENT_COMMENT",
       "args": {
         "text": "Codigo de ataque do minotauro 0 é placagem, 1 é o tridente",
-        "__collapse": false
+        "__collapse": true
       },
       "id": "bb71af05-18a5-4eaf-8320-7069d9ef1d87"
     },
@@ -178,6 +191,19 @@
             },
             "children": {
               "true": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "e0986766-c6ce-40db-8891-5332a6e9d56f",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "7d2c5f45-efef-4276-8c86-c4d660824c71"
+                },
                 {
                   "command": "EVENT_ACTOR_EMOTE",
                   "args": {
@@ -246,7 +272,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": false,
+        "__collapse": true,
         "__comment": false
       },
       "children": {
@@ -258,6 +284,19 @@
               "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
             },
             "id": "e06b922b-c026-4b22-afb8-97dd3d0e06ea"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "5bf5e22d-73e9-48ee-934e-393c7b4c7f84",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "1ccf5c87-a0ea-4fe1-97fd-1b5cfe4ad9a9"
           },
           {
             "command": "EVENT_LAUNCH_PROJECTILE",

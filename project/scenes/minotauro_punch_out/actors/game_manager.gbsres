@@ -21,7 +21,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Sistema de movimento tipo jogo punch out",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -194,7 +194,7 @@
               ],
               "override": true,
               "__scriptTabs": "press",
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -217,10 +217,23 @@
                   "children": {
                     "true": [
                       {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "0d9c0c23-ad5e-41d0-92c1-2ffe2367ef74",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 0
+                        },
+                        "id": "1846117c-8966-4a38-bbc1-ebc524965235"
+                      },
+                      {
                         "command": "EVENT_LAUNCH_PROJECTILE",
                         "args": {
                           "__section": "projectile",
-                          "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+                          "spriteSheetId": "4e369e73-8683-477b-9395-5600bb14e5dd",
                           "spriteStateId": "",
                           "actorId": "player",
                           "x": 0,
@@ -534,7 +547,8 @@
           "value": 14
         },
         "__collapseElse": false,
-        "__collapse": true
+        "__collapse": false,
+        "__comment": true
       },
       "children": {
         "true": [
@@ -767,17 +781,6 @@
         ]
       },
       "id": "1761653c-4301-4acd-8316-164f5579bf9e"
-    },
-    {
-      "command": "EVENT_TEXT_DRAW",
-      "args": {
-        "text": "$01$",
-        "x": 1,
-        "y": 1,
-        "location": "background",
-        "__collapse": true
-      },
-      "id": "1c12f3aa-80db-4a54-9ce3-dd7fdffd27ee"
     }
   ],
   "hit1Script": [],

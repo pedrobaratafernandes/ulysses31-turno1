@@ -21,7 +21,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Player Controllers",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -924,14 +924,14 @@
                 {
                   "command": "EVENT_SOUND_PLAY_EFFECT",
                   "args": {
-                    "type": "27229269-c93d-4eed-9dba-ab5bcdfced41",
+                    "type": "9887194e-0e96-4584-8330-6e3cb784dc1e",
                     "priority": "medium",
                     "pitch": 4,
                     "frequency": 200,
                     "duration": 0.5,
                     "wait": true,
                     "effect": 0,
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "89585972-d42d-4235-a804-68c703583011"
                 }
@@ -1192,20 +1192,6 @@
               "__collapse": false
             },
             "id": "35722aad-ce33-44ca-a3ef-c3d98f1b0d40"
-          },
-          {
-            "command": "EVENT_SOUND_PLAY_EFFECT",
-            "args": {
-              "type": "b3695359-144e-4837-92f7-8af9c410a746",
-              "priority": "medium",
-              "pitch": 4,
-              "frequency": 200,
-              "duration": 0.5,
-              "wait": true,
-              "effect": 0,
-              "__collapse": true
-            },
-            "id": "79999fb9-fbb4-4625-9184-7d926bced866"
           }
         ]
       },

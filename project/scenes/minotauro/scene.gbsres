@@ -91,7 +91,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -134,6 +134,19 @@
       },
       "children": {
         "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "793c66f2-5b56-4782-a172-c40ca4160dfe",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "2c2dc52a-8382-4dce-83d1-897ed469d19e"
+          },
           {
             "command": "EVENT_COMMENT",
             "args": {

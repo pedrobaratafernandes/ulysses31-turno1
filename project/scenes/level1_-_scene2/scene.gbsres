@@ -1307,13 +1307,14 @@
           {
             "command": "EVENT_SOUND_PLAY_EFFECT",
             "args": {
-              "type": "b3695359-144e-4837-92f7-8af9c410a746",
+              "type": "9887194e-0e96-4584-8330-6e3cb784dc1e",
               "priority": "medium",
               "pitch": 4,
               "frequency": 200,
               "duration": 0.5,
               "wait": true,
-              "effect": 0
+              "effect": 0,
+              "__comment": false
             },
             "id": "5dc5a9e6-5473-4aad-89de-6a78b9ac9e27"
           }

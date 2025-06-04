@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "5bf5e22d-73e9-48ee-934e-393c7b4c7f84",
+  "name": "Ataque minotauro.vgm",
+  "symbol": "sound_ataque_minotauro_vgm",
+  "filename": "Ataque minotauro.vgm",
+  "type": "vgm"
+}

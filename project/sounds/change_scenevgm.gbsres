@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "a2fa6a98-0197-44a9-9016-7e93ea3cb707",
+  "name": "change scene.vgm",
+  "symbol": "sound_change_scene_vgm",
+  "filename": "change scene.vgm",
+  "type": "vgm"
+}

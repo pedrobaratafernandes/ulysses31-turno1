@@ -670,7 +670,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Player Controllers",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -1573,14 +1573,14 @@
                 {
                   "command": "EVENT_SOUND_PLAY_EFFECT",
                   "args": {
-                    "type": "27229269-c93d-4eed-9dba-ab5bcdfced41",
+                    "type": "9887194e-0e96-4584-8330-6e3cb784dc1e",
                     "priority": "medium",
                     "pitch": 4,
                     "frequency": 200,
                     "duration": 0.5,
                     "wait": true,
                     "effect": 0,
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "fbf722b1-dc82-4ae7-a294-2f294aee3309"
                 }
@@ -1637,7 +1637,8 @@
               "frequency": 200,
               "duration": 0.5,
               "wait": true,
-              "effect": 0
+              "effect": 0,
+              "__comment": true
             },
             "id": "4b61974b-a7ef-4859-8397-1fd8a0c71a45"
           }

@@ -3,16 +3,16 @@
   "id": "014ab513-4d38-4dee-9b40-8c4153dd9086",
   "name": "blade",
   "symbol": "sprite_sprite_0001",
-  "numFrames": 3,
+  "numFrames": 1,
   "filename": "blade.png",
-  "checksum": "07b1956952e1c37946bc5f3d261e30df757875c1",
-  "width": 48,
+  "checksum": "25323a4b6da28d80c338efbedd960fa87924d190",
+  "width": 16,
   "height": 16,
   "states": [
     {
       "id": "c3b4400e-03cc-4a61-8447-d409894dafb2",
       "name": "",
-      "animationType": "multi",
+      "animationType": "fixed",
       "flipLeft": true,
       "animations": [
         {
@@ -45,6 +45,32 @@
                   "palette": 0,
                   "paletteIndex": 0,
                   "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "c6b2207a-06fc-4d4e-b9b0-69ba54bb66ac",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                },
+                {
+                  "id": "f80982c8-7045-4457-ad47-5a8d22fb396e",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
                   "priority": false
                 }
               ]
@@ -171,7 +197,7 @@
       ]
     }
   ],
-  "numTiles": 4,
+  "numTiles": 2,
   "canvasWidth": 16,
   "canvasHeight": 16,
   "boundsX": 0,

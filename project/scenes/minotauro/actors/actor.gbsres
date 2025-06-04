@@ -82,7 +82,7 @@
                   "command": "EVENT_ACTOR_SET_SPRITE",
                   "args": {
                     "actorId": "e318c13a-fb43-4385-a245-8148f00c07e6",
-                    "spriteSheetId": "4e369e73-8683-477b-9395-5600bb14e5dd"
+                    "spriteSheetId": "014ab513-4d38-4dee-9b40-8c4153dd9086"
                   },
                   "id": "54faf192-8138-473c-a944-3bb34826c427"
                 }
@@ -103,7 +103,7 @@
         "override": true,
         "__scriptTabs": "press",
         "__comment": false,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -120,8 +120,8 @@
                   "type": "false"
                 }
               },
-              "__collapseElse": false,
-              "__collapse": true
+              "__collapseElse": true,
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -142,7 +142,7 @@
                       "value": "up"
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -301,6 +301,20 @@
                         "id": "c8113edb-1a62-47a8-a5ae-95ac3691a175"
                       },
                       {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "0d9c0c23-ad5e-41d0-92c1-2ffe2367ef74",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 0,
+                          "__collapse": true
+                        },
+                        "id": "630a7724-7240-4771-b36a-102d3c4a7c67"
+                      },
+                      {
                         "command": "EVENT_ACTOR_SHOW",
                         "args": {
                           "actorId": "3f3f2ddd-d3d3-45c1-8605-0c4e5605ec7d",
@@ -347,7 +361,7 @@
                       "value": "down"
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -373,7 +387,7 @@
                             }
                           },
                           "__collapseElse": true,
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -411,7 +425,7 @@
                             }
                           },
                           "__collapseElse": true,
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -471,6 +485,20 @@
                           "__collapse": true
                         },
                         "id": "e9ec9bdb-1cf2-4318-a0f3-027b17ddb46d"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "0d9c0c23-ad5e-41d0-92c1-2ffe2367ef74",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 0,
+                          "__collapse": true
+                        },
+                        "id": "a2707cdb-dbb1-4c9e-82a8-b1e4e193883e"
                       },
                       {
                         "command": "EVENT_ACTOR_SHOW",
@@ -607,7 +635,7 @@
                             "type": "direction",
                             "value": "left"
                           },
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "id": "027e7573-9b2e-4beb-b5a1-69750f4e7be4"
                       },
@@ -643,6 +671,20 @@
                           "__collapse": true
                         },
                         "id": "8db26283-e35c-4564-b348-e95e122a2068"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "0d9c0c23-ad5e-41d0-92c1-2ffe2367ef74",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 0,
+                          "__collapse": true
+                        },
+                        "id": "4c229762-e3a3-4173-8296-4761c86eb16f"
                       },
                       {
                         "command": "EVENT_ACTOR_SHOW",
@@ -691,7 +733,7 @@
                       "value": "right"
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -717,7 +759,7 @@
                             "property": "ypos"
                           },
                           "__collapseElse": true,
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -755,7 +797,7 @@
                             }
                           },
                           "__collapseElse": true,
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -817,6 +859,20 @@
                         "id": "b201d49f-4075-4236-a7e0-b35bc6926915"
                       },
                       {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "0d9c0c23-ad5e-41d0-92c1-2ffe2367ef74",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": true,
+                          "effect": 0,
+                          "__collapse": true
+                        },
+                        "id": "03e36732-b63b-41e1-a9f2-807a0a77193e"
+                      },
+                      {
                         "command": "EVENT_ACTOR_SHOW",
                         "args": {
                           "actorId": "3f3f2ddd-d3d3-45c1-8605-0c4e5605ec7d",
@@ -856,6 +912,19 @@
                 }
               ],
               "false": [
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "9887194e-0e96-4584-8330-6e3cb784dc1e",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": true,
+                    "effect": 0
+                  },
+                  "id": "89d110e5-b59b-4291-86f4-f59acb51acf4"
+                },
                 {
                   "command": "EVENT_LAUNCH_PROJECTILE",
                   "args": {

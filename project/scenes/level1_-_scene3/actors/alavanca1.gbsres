@@ -17,6 +17,20 @@
   "symbol": "actor_21",
   "script": [
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "1741849c-98ac-449a-aa1d-ae7ca55cb1b3",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0,
+        "__collapse": true
+      },
+      "id": "b28fcf21-f232-4ef3-abbb-3329ecb0c299"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "6",

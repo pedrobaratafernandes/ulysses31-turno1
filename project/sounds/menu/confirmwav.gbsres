@@ -1,0 +1,8 @@
+{
+  "_resourceType": "sound",
+  "id": "91e495fd-b8fc-4d57-8c12-23b35b0f291d",
+  "name": "Menu/Confirm.wav",
+  "symbol": "sound_menu_confirm_wav",
+  "filename": "Menu/Confirm.wav",
+  "type": "wav"
+}

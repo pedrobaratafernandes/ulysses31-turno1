@@ -13,6 +13,19 @@
   "prefabScriptOverrides": {},
   "script": [
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "1741849c-98ac-449a-aa1d-ae7ca55cb1b3",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "7ab2fbd9-70db-48e0-84c4-98a6228ad694"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "7",

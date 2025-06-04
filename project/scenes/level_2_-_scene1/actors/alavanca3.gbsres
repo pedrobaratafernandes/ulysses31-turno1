@@ -17,6 +17,19 @@
   "symbol": "actor_34",
   "script": [
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "1741849c-98ac-449a-aa1d-ae7ca55cb1b3",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "e8099ed2-f236-40ff-b430-ceb1d3c8455b"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "7",
