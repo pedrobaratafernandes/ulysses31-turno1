@@ -21,7 +21,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Portas1",
-        "__collapse": false,
+        "__collapse": true,
         "__comment": false
       },
       "children": {
@@ -235,7 +235,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Portas2",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -447,7 +447,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Portas3",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -456,7 +456,7 @@
             "command": "EVENT_GROUP",
             "args": {
               "__label": "Porta3/ ComeçaAberta",
-              "__collapse": false,
+              "__collapse": true,
               "__comment": false
             },
             "children": {
@@ -557,7 +557,7 @@
             "command": "EVENT_GROUP",
             "args": {
               "__label": "Porta 3/ ComeçaFechada",
-              "__collapse": false,
+              "__collapse": true,
               "__comment": false
             },
             "children": {
@@ -660,7 +660,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Portas4",
-        "__collapse": false,
+        "__collapse": true,
         "__comment": false
       },
       "children": {
@@ -873,7 +873,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Player Controllers",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -1802,7 +1802,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [

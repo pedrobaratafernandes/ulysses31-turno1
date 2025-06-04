@@ -17,10 +17,39 @@
   "y": 208,
   "script": [
     {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "As per Egeus\nrequest",
+          "Ulysses travels \nto King Minos",
+          "kingdom to find \nand rescue Theseus"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "75a8aaee-0bc7-4f96-b25a-6b569da13600"
+    },
+    {
       "command": "EVENT_WAIT",
       "args": {
         "time": 0.5,
-        "frames": 30
+        "frames": 30,
+        "__collapse": true
       },
       "id": "8e1f1451-6b7f-4fd7-8f68-ef1dac30b787"
     },
@@ -37,12 +66,14 @@
           "value": 0
         },
         "direction": "",
-        "fadeSpeed": "2"
+        "fadeSpeed": "2",
+        "__collapse": true
       },
       "id": "c76c6f90-5451-43cc-856d-5b321f294e77"
     }
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": false
 }
