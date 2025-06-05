@@ -13,7 +13,7 @@
     {
       "command": "EVENT_SOUND_PLAY_EFFECT",
       "args": {
-        "type": "0d9c0c23-ad5e-41d0-92c1-2ffe2367ef74",
+        "type": "f17c1ff6-b8cf-4b93-9eed-cd32c937fc7b",
         "priority": "medium",
         "pitch": 4,
         "frequency": 200,
