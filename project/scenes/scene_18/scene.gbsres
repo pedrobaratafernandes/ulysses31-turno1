@@ -3,38 +3,51 @@
   "id": "9b9c3d6a-369f-4bd5-b4cf-5a5d11b32f8c",
   "_index": 17,
   "name": "Scene 18",
-  "backgroundId": "95babb4c-fa31-4b2d-bac0-4470f79682bf",
+  "backgroundId": "710953d8-2189-43b1-a7e7-074b1e6a30eb",
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "LOGO",
+  "type": "TOPDOWN",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_18",
-  "x": 129,
-  "y": 388,
+  "x": 136,
+  "y": 392,
   "script": [
     {
-      "command": "EVENT_WAIT",
+      "command": "EVENT_TEXT",
       "args": {
-        "time": 1,
-        "frames": 30
+        "text": [
+          "After saying \ngoodbye to Theseus",
+          "and Ariane.Ulysses\n heads back into",
+          "space board the\nOdyssey.",
+          "The adventure\ncontinues!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
       },
-      "id": "2d67958d-231f-4bda-98e5-90c9fe3adfe3"
-    },
-    {
-      "command": "EVENT_GBVM_SCRIPT",
-      "args": {
-        "script": "; Load the text to be displayed\nVM_LOAD_TEXT 0\n\n; Define the text string in ASCII format\n.asciz \"After saying \\ngoodbye to Theseus\\n and Ariane, \"\n \n\n\n; Move the overlay to the center of the screen (adjust coordinates as needed)\nVM_OVERLAY_MOVE_TO 0, 10, .OVERLAY_SPEED_INSTANT\n\n; Render the text in Logo Mode\nVM_DISPLAY_TEXT_EX .DISPLAY_DEFAULT , 4\nVM_OVERLAY_WAIT .UI_MODAL, ^/(.UI_WAIT_WINDOW | .UI_WAIT_BTN_A )/\nVM_OVERLAY_CLEAR 0, 0, 20, 6, .UI_COLOR_WHITE, .UI_AUTO_SCROLL \nVM_LOAD_TEXT 0\n\n; Define the text string in ASCII format\n.asciz \"Ulysses heads \\nback into space \\naboard the Odyssey.\"\n \n\n\n; Move the overlay to the center of the screen (adjust coordinates as needed)\nVM_OVERLAY_MOVE_TO 0, 10, .OVERLAY_SPEED_INSTANT\n\n; Render the text in Logo Mode\nVM_DISPLAY_TEXT_EX .DISPLAY_DEFAULT , 4\nVM_OVERLAY_WAIT .UI_MODAL, ^/(.UI_WAIT_WINDOW | .UI_WAIT_BTN_A )/\nVM_OVERLAY_CLEAR 0, 0, 20, 6, .UI_COLOR_WHITE, .UI_AUTO_SCROLL \n\n"
-      },
-      "id": "9d0ce7ac-ad58-4f92-b3b1-c49ac8b5eff4"
+      "id": "6ef39926-2052-4a36-8c2d-21b45e3bdc05"
     },
     {
       "command": "EVENT_SWITCH_SCENE",
       "args": {
-        "sceneId": "a334149b-bc44-4edc-b841-609af7f25001",
+        "sceneId": "5dc8bf96-f437-4e01-aa96-9a00b371019a",
         "x": {
           "type": "number",
           "value": 0

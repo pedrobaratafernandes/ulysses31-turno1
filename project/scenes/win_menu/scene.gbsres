@@ -31,19 +31,20 @@
       "id": "12b58c2d-5859-481a-80e2-9bfe59b1ce0f"
     },
     {
-      "command": "EVENT_IF_INPUT",
+      "command": "EVENT_SET_INPUT_SCRIPT",
       "args": {
         "input": [
-          "a",
-          "b",
-          "start",
+          "left",
+          "up",
           "right",
           "down",
-          "up",
-          "left",
-          "select"
+          "a",
+          "select",
+          "start",
+          "b"
         ],
-        "__collapseElse": true
+        "override": true,
+        "__scriptTabs": "press"
       },
       "children": {
         "true": [
@@ -64,10 +65,9 @@
             },
             "id": "6c9aad65-ba27-4712-a2dc-2b27b52df73a"
           }
-        ],
-        "false": []
+        ]
       },
-      "id": "bf919957-ad9f-46db-a95e-b3f742ede1cb"
+      "id": "a51a223d-2c57-4a9b-9947-179ca1df638d"
     }
   ],
   "playerHit1Script": [],

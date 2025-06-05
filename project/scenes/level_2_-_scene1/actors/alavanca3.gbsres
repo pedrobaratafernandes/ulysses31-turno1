@@ -575,6 +575,19 @@
   "updateScript": [],
   "hit1Script": [
     {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "1741849c-98ac-449a-aa1d-ae7ca55cb1b3",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "1745cdec-c7c3-4b4e-95a1-5bf98bb6f74e"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "7",
