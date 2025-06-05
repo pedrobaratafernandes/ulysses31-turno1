@@ -3,7 +3,7 @@
   "id": "4b13cd71-d77d-4394-aa6e-10413b606356",
   "_index": 15,
   "name": "CutScene 2",
-  "backgroundId": "fc087ccd-2fd0-4109-9168-6da55ecd84d7",
+  "backgroundId": "db9eeff1-a1ac-40eb-804a-0f3be20d59a5",
   "tilesetId": "",
   "width": 20,
   "height": 18,
@@ -17,39 +17,20 @@
   "y": 208,
   "script": [
     {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "Ulysses joins \nforces with",
-          "princess Ariane \nto save Theseus",
-          "from the labyrinth"
-        ],
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "5e36d612-b1c3-49e0-8ebe-b6d0c0769511"
-    },
-    {
       "command": "EVENT_WAIT",
       "args": {
-        "time": 0.5,
+        "time": 1,
         "frames": 30
       },
       "id": "16e1f0f8-f853-402a-8a99-4e82db7c6770"
+    },
+    {
+      "command": "EVENT_GBVM_SCRIPT",
+      "args": {
+        "script": "VM_IDLE\nVM_LOAD_TEXT 0\n\n; Define the text string in ASCII format\n.asciz \"Ulysses joins \\nforces with, \\nprincess Ariane\"\n \n\n\n; Move the overlay to the center of the screen (adjust coordinates as needed)\nVM_OVERLAY_MOVE_TO 0, 10, .OVERLAY_SPEED_INSTANT\nVM_OVERLAY_CLEAR 0, 0, 25, 5, .UI_COLOR_WHITE, .UI_AUTO_SCROLL \n; Render the text in Logo Mode\nVM_DISPLAY_TEXT_EX .DISPLAY_DEFAULT , 0\nVM_OVERLAY_WAIT .UI_MODAL, ^/(.UI_WAIT_WINDOW | .UI_WAIT_BTN_A )/\nVM_IDLE\nVM_LOAD_TEXT 0\n\n; Define the text string in ASCII format\n.asciz \"to save Theseus \\nfrom the labyrinth.\"\n \n\n\n; Move the overlay to the center of the screen (adjust coordinates as needed)\nVM_OVERLAY_MOVE_TO 0, 10, .OVERLAY_SPEED_INSTANT\n\n; Render the text in Logo Mode\nVM_DISPLAY_TEXT_EX .DISPLAY_DEFAULT , 0\nVM_OVERLAY_CLEAR 0, 0, 20, 5, .UI_COLOR_WHITE, .UI_AUTO_SCROLL \nVM_OVERLAY_WAIT .UI_MODAL, ^/(.UI_WAIT_WINDOW | .UI_WAIT_BTN_A )/\n",
+        "__comment": false
+      },
+      "id": "72ee5507-3995-4318-ae8a-c03ce243ed49"
     },
     {
       "command": "EVENT_SWITCH_SCENE",

@@ -17,6 +17,31 @@
   "y": 992,
   "script": [
     {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Press the buttons\nto activate doors"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "858ceb9a-6d3a-4dec-8de5-acd686bae076"
+    },
+    {
       "id": "8b342819-946a-4e2b-a621-4df69ae5ac16",
       "command": "EVENT_GROUP",
       "args": {
@@ -709,7 +734,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Player Controllers",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -1638,7 +1663,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
