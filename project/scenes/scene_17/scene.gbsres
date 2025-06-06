@@ -3,11 +3,11 @@
   "id": "2221ffe7-88d3-4f59-a522-38170d7870b3",
   "_index": 16,
   "name": "Scene 17",
-  "backgroundId": "48ec6d54-9f94-4233-802f-c6c64ac5bd8c",
+  "backgroundId": "b37c40ae-39ae-439b-8918-3d7f864065e0",
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "LOGO",
+  "type": "TOPDOWN",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
@@ -17,19 +17,33 @@
   "y": 208,
   "script": [
     {
-      "command": "EVENT_WAIT",
+      "command": "EVENT_TEXT",
       "args": {
-        "time": 1,
-        "frames": 30
+        "text": [
+          "Princess Ariane is\nfinally reunited",
+          "with Theseus and\nthey decide to run",
+          "away together\nunder the ",
+          "protection of\nEgeus,",
+          "Theseus father."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
       },
-      "id": "2d418615-934d-4112-86cd-b661b9ae834f"
-    },
-    {
-      "command": "EVENT_GBVM_SCRIPT",
-      "args": {
-        "script": "\nVM_LOAD_TEXT 0\n\n; Define the text string in ASCII format\n.asciz \"Princess Ariane is \\nfinally  reunited \\nwith Theseus\"\n \n\n\n; Move the overlay to the center of the screen (adjust coordinates as needed)\nVM_OVERLAY_MOVE_TO 0, 10, .OVERLAY_SPEED_INSTANT\nVM_OVERLAY_CLEAR 0, 0, 25, 5, .UI_COLOR_WHITE, .UI_AUTO_SCROLL \n; Render the text in Logo Mode\nVM_DISPLAY_TEXT_EX .DISPLAY_DEFAULT , 0\nVM_OVERLAY_WAIT .UI_MODAL, ^/(.UI_WAIT_WINDOW | .UI_WAIT_BTN_A )/\nVM_IDLE\nVM_LOAD_TEXT 0\n\n; Define the text string in ASCII format\n.asciz \"and they decide\\n to run away\\n together under\\n the\"\n \n\n\n; Move the overlay to the center of the screen (adjust coordinates as needed)\nVM_OVERLAY_MOVE_TO 0, 10, .OVERLAY_SPEED_INSTANT\n\n; Render the text in Logo Mode\nVM_DISPLAY_TEXT_EX .DISPLAY_DEFAULT , 0\nVM_OVERLAY_CLEAR 0, 0, 20, 10, .UI_COLOR_WHITE, .UI_AUTO_SCROLL \nVM_OVERLAY_WAIT .UI_MODAL, ^/(.UI_WAIT_WINDOW | .UI_WAIT_BTN_A )/\n\n\n\n\nVM_LOAD_TEXT 0\n\n; Define the text string in ASCII format\n.asciz \"protection of \\nEgeus, Theseus \\nfather.\"\n \n\n\n; Move the overlay to the center of the screen (adjust coordinates as needed)\nVM_OVERLAY_MOVE_TO 0, 10, .OVERLAY_SPEED_INSTANT\n\n; Render the text in Logo Mode\nVM_DISPLAY_TEXT_EX .DISPLAY_DEFAULT , 0\nVM_OVERLAY_CLEAR 0, 0, 20, 5, .UI_COLOR_WHITE, .UI_AUTO_SCROLL \nVM_OVERLAY_WAIT .UI_MODAL, ^/(.UI_WAIT_WINDOW | .UI_WAIT_BTN_A )/\n"
-      },
-      "id": "6a40daa2-1f35-4ca1-8b50-29f41a2df897"
+      "id": "2f4547c4-4cb2-47cc-9718-5f1580be6a14"
     },
     {
       "command": "EVENT_SWITCH_SCENE",
@@ -51,5 +65,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "42899cea-4627-4ca1-82ba-c6a5754d4909"
 }

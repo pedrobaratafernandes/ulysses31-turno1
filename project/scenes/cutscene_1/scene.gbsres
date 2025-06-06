@@ -7,7 +7,7 @@
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "LOGO",
+  "type": "TOPDOWN",
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "00168+",
@@ -17,22 +17,31 @@
   "y": 208,
   "script": [
     {
-      "command": "EVENT_WAIT",
+      "command": "EVENT_TEXT",
       "args": {
-        "time": 1,
-        "frames": 30,
-        "__collapse": false
+        "text": [
+          "As per Egeus\nrequest, Ulysses ",
+          "travels to\nKing Minos",
+          "kingdom to find\nand rescue Theseus"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
       },
-      "id": "8e1f1451-6b7f-4fd7-8f68-ef1dac30b787"
-    },
-    {
-      "command": "EVENT_GBVM_SCRIPT",
-      "args": {
-        "script": "; Load the text to be displayed\nVM_LOAD_TEXT 0\n\n; Define the text string in ASCII format\n.asciz \"As per Egeus \\nrequest, Ulysses \\ntravels to \\nKing Minos\"\n \n\n\n; Move the overlay to the center of the screen (adjust coordinates as needed)\nVM_OVERLAY_MOVE_TO 0, 10, .OVERLAY_SPEED_INSTANT\n\n; Render the text in Logo Mode\nVM_DISPLAY_TEXT_EX .DISPLAY_DEFAULT , 4\nVM_OVERLAY_WAIT .UI_MODAL, ^/(.UI_WAIT_WINDOW | .UI_WAIT_BTN_A )/\nVM_OVERLAY_CLEAR 0, 0, 20, 6, .UI_COLOR_WHITE, .UI_AUTO_SCROLL \nVM_LOAD_TEXT 0\n\n; Define the text string in ASCII format\n.asciz \"kingdom to\\n find and\\n rescue Theseus.\"\n \n\n\n; Move the overlay to the center of the screen (adjust coordinates as needed)\nVM_OVERLAY_MOVE_TO 0, 10, .OVERLAY_SPEED_INSTANT\n\n; Render the text in Logo Mode\nVM_DISPLAY_TEXT_EX .DISPLAY_DEFAULT , 4\nVM_OVERLAY_WAIT .UI_MODAL, ^/(.UI_WAIT_WINDOW | .UI_WAIT_BTN_A )/\n\n",
-        "__collapse": false,
-        "__comment": false
-      },
-      "id": "008cb063-d27c-47d5-8ca9-ca1efb58754f"
+      "id": "5bdc734d-b9a4-411f-bb89-5e8f6b3cf9b0"
     },
     {
       "command": "EVENT_SWITCH_SCENE",
@@ -55,5 +64,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "autoFadeEventCollapse": false
+  "autoFadeEventCollapse": false,
+  "playerSpriteSheetId": "42899cea-4627-4ca1-82ba-c6a5754d4909"
 }
