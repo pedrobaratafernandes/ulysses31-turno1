@@ -8,5 +8,6 @@
   "imageWidth": 16,
   "imageHeight": 16,
   "filename": "UI/sword_icon.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

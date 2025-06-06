@@ -17,14 +17,32 @@
   "y": 992,
   "script": [
     {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 18
+        },
+        "y": {
+          "type": "number",
+          "value": 18
+        }
+      },
+      "id": "1e16f8db-a4f2-43d9-837c-8c8568074d3a"
+    },
+    {
       "command": "EVENT_MUSIC_STOP",
-      "args": {},
+      "args": {
+        "__collapse": true
+      },
       "id": "d9c515bc-8340-4db6-8041-20f4fab78e1f"
     },
     {
       "command": "EVENT_MUSIC_PLAY",
       "args": {
-        "musicId": "ec9e172e-7785-422e-84c3-99fe1cdadd62"
+        "musicId": "ec9e172e-7785-422e-84c3-99fe1cdadd62",
+        "__collapse": true
       },
       "id": "33ef041d-2c46-4b56-b734-b93087b418b8"
     },
@@ -49,7 +67,8 @@
         "closeWhen": "key",
         "closeButton": "a",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "closeDelayFrames": 30,
+        "__collapse": true
       },
       "id": "858ceb9a-6d3a-4dec-8de5-acd686bae076"
     },

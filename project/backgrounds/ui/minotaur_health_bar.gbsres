@@ -8,5 +8,6 @@
   "imageWidth": 48,
   "imageHeight": 8,
   "filename": "UI/minotaur_health_bar.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

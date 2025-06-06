@@ -8,5 +8,6 @@
   "imageWidth": 16,
   "imageHeight": 16,
   "filename": "UI/pistol_icon.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

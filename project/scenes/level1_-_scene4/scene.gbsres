@@ -871,7 +871,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Player Controllers",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -1800,7 +1800,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
