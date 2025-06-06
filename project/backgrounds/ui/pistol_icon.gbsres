@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "ea1d3fcc-5887-4d6e-9cb8-68cf1f057eab",
+  "name": "UI/pistol_icon",
+  "symbol": "bg_ui_pistol_icon",
+  "width": 2,
+  "height": 2,
+  "imageWidth": 16,
+  "imageHeight": 16,
+  "filename": "UI/pistol_icon.png",
+  "tileColors": ""
+}

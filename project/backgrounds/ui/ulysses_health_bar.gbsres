@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "f333acec-d602-4832-9fa3-cda334be1281",
+  "name": "UI/ulysses_health_bar",
+  "symbol": "bg_ui_ulysses_health_bar",
+  "width": 6,
+  "height": 1,
+  "imageWidth": 48,
+  "imageHeight": 8,
+  "filename": "UI/ulysses_health_bar.png",
+  "tileColors": ""
+}

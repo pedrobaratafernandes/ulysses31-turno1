@@ -24,7 +24,7 @@
           "travels to\nKing Minos",
           "kingdom to find\nand rescue Theseus"
         ],
-        "__section": "text",
+        "__section": "behavior",
         "avatarId": "",
         "minHeight": 4,
         "maxHeight": 7,
@@ -37,9 +37,10 @@
         "speedIn": -1,
         "speedOut": -1,
         "closeWhen": "key",
-        "closeButton": "a",
+        "closeButton": "any",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "closeDelayFrames": 30,
+        "__collapse": false
       },
       "id": "5bdc734d-b9a4-411f-bb89-5e8f6b3cf9b0"
     },
@@ -56,7 +57,8 @@
           "value": 3
         },
         "direction": "",
-        "fadeSpeed": "2"
+        "fadeSpeed": "2",
+        "__collapse": true
       },
       "id": "2d578e20-d34a-4a76-ab0f-57080a30266b"
     }

@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "c4e0999e-345d-4458-9ef6-7305f974fbf9",
+  "name": "UI/sword_icon",
+  "symbol": "bg_ui_sword_icon",
+  "width": 2,
+  "height": 2,
+  "imageWidth": 16,
+  "imageHeight": 16,
+  "filename": "UI/sword_icon.png",
+  "tileColors": ""
+}

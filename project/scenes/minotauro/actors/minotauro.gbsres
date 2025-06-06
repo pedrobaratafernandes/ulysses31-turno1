@@ -19,7 +19,8 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__label": "sistema de hits para o minotauro"
+        "__label": "sistema de hits para o minotauro",
+        "__collapse": true
       },
       "children": {
         "true": [

@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "53e67894-d74c-4aac-93f0-67e8997f43b8",
+  "name": "UI/minotaur_health_bar",
+  "symbol": "bg_ui_minotaur_health_bar",
+  "width": 6,
+  "height": 1,
+  "imageWidth": 48,
+  "imageHeight": 8,
+  "filename": "UI/minotaur_health_bar.png",
+  "tileColors": ""
+}
