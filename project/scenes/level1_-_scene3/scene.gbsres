@@ -23,8 +23,8 @@
         "value": {
           "type": "true"
         },
-        "__collapse": false,
-        "__comment": true
+        "__collapse": true,
+        "__comment": false
       },
       "id": "1237d103-22cc-412e-a7ed-c418704c9544"
     },

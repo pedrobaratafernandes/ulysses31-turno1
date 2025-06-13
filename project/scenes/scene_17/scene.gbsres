@@ -26,7 +26,7 @@
           "protection of\nEgeus,",
           "Theseus father."
         ],
-        "__section": "text",
+        "__section": "behavior",
         "avatarId": "",
         "minHeight": 4,
         "maxHeight": 7,
@@ -39,9 +39,10 @@
         "speedIn": -1,
         "speedOut": -1,
         "closeWhen": "key",
-        "closeButton": "a",
+        "closeButton": "any",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "closeDelayFrames": 30,
+        "__collapse": true
       },
       "id": "2f4547c4-4cb2-47cc-9718-5f1580be6a14"
     },

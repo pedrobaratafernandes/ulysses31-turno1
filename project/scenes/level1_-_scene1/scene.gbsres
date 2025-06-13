@@ -52,7 +52,7 @@
         "text": [
           "Press the buttons\nto activate doors"
         ],
-        "__section": "text",
+        "__section": "behavior",
         "avatarId": "",
         "minHeight": 4,
         "maxHeight": 7,
@@ -65,7 +65,7 @@
         "speedIn": -1,
         "speedOut": -1,
         "closeWhen": "key",
-        "closeButton": "a",
+        "closeButton": "any",
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30,
         "__collapse": true

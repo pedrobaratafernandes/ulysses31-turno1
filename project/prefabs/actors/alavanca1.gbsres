@@ -46,8 +46,8 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Porta Vermelha/ ComeçaAberta",
-        "__collapse": true,
-        "__comment": false
+        "__collapse": false,
+        "__comment": true
       },
       "children": {
         "true": [
@@ -59,7 +59,7 @@
                 "value": "6"
               },
               "__collapseElse": false,
-              "__collapse": false,
+              "__collapse": true,
               "__disableElse": false,
               "__comment": false
             },
@@ -69,7 +69,7 @@
                   "id": "e7a6b99d-9513-4915-a3f9-ecb8953f9b45",
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": false,
+                    "__collapse": true,
                     "__label": "porta1Desaparece"
                   },
                   "children": {
@@ -133,7 +133,8 @@
                   "command": "EVENT_GROUP",
                   "args": {
                     "__label": "porta1Aparece",
-                    "__collapse": true
+                    "__collapse": true,
+                    "__comment": true
                   },
                   "children": {
                     "true": [
@@ -141,7 +142,7 @@
                         "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
                         "args": {
                           "actorId": "435ba679-f208-4e5d-ab30-ff8befa80516",
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "id": "ca020055-b4bc-4bf5-9cca-ac40549526c5",
                         "children": {}
@@ -163,7 +164,8 @@
                   "command": "EVENT_GROUP",
                   "args": {
                     "__label": "portaAparece",
-                    "__collapse": true
+                    "__collapse": true,
+                    "__comment": true
                   },
                   "children": {
                     "true": [
@@ -221,7 +223,7 @@
                 "value": "6"
               },
               "__collapseElse": true,
-              "__collapse": false,
+              "__collapse": true,
               "__comment": false
             },
             "children": {
@@ -231,14 +233,15 @@
                   "command": "EVENT_GROUP",
                   "args": {
                     "__label": "portaAparece",
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
                       {
                         "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
                         "args": {
-                          "actorId": "d4f82167-2d2f-44a5-85b0-6d970227f68f"
+                          "actorId": "d4f82167-2d2f-44a5-85b0-6d970227f68f",
+                          "__collapse": true
                         },
                         "id": "9adac5d5-bdbc-4fb4-b962-c09c07da5a96",
                         "children": {}
@@ -247,7 +250,7 @@
                         "command": "EVENT_ACTOR_SHOW",
                         "args": {
                           "actorId": "d4f82167-2d2f-44a5-85b0-6d970227f68f",
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "id": "a753ed7d-0c1d-45ad-bfc2-286f5b7ad218",
                         "children": {}
